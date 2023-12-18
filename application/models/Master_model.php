@@ -3,6 +3,13 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Master_model extends CI_Model
 {
+    public function getMapper()
+    {
+        $this->db->select('*');
+        $this->db->from('meter_mapper');
+        return $this->db->get()->result_array();
+    }
+
     public function getCategory()
     {
         $this->db->select('a.*, b.category_name as parent_name, b.category_sid as parent_sid');

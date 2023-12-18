@@ -15,7 +15,8 @@
       "ext-json": "*",
       "ext-xdebug": "*",
       "ext-sqlite3": "*",
-      "ext-apache": "*"
+      "ext-apache": "*",
+      "ext-curl": "*"
     },
 	"suggest": {
 		"paragonie/random_compat": "Provides better randomness in PHP 5.x"
