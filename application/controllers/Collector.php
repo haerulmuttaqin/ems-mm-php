@@ -17,6 +17,8 @@ class Collector extends CI_Controller
 
     public function test()
     {
+
+        $obj = json_decode($result);
         $data = file_get_contents("http://localhost/ems.mm/dashboard1.json");
         $data = mb_substr($data, strpos($data, '{'));
         $data = mb_substr($data, 0, -1);
