@@ -6,7 +6,6 @@ class Collector extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->helper('file');
         $this->load->model('Master_model', 'master');
     }
 
@@ -21,9 +20,8 @@ class Collector extends CI_Controller
         return preg_replace("/^$bom/", '', $text);
     }
 
-    public function test()
+    public function dashboard1()
     {
-
 
         $url = "http://localhost/ems.mm/dashboard1.json";
 
@@ -34,29 +32,21 @@ class Collector extends CI_Controller
         curl_close($ch);
         $results = json_decode($this->remove_utf8_bom($output), true);
 
-
         $mapper = $this->master->getMapper();
 
-        var_dump($mapper);
-
         foreach ($results as $item) {
-            echo "</br>";
-            echo "</br>";
+            $data = null;
+            $data['device'] = $item['DeviceDescription'];
+            $data['device_id'] = $item['IdDevice'];
+            $data['date_time'] = $item['TimeStamp'];
             $mea = $item['MeasureList'];
             foreach ($mapper as $map) {
-                var_dump($mea[$map['key']]);
-                echo   "</br>";
-                echo  $map['key']. "</br>";
+                $meaItem = $mea[$map['key']];
+                $data['mea'] = $meaItem['Description'];
+                $data[$map['field']] = $meaItem['Value'];
             }
-//            var_dump();
+            $this->db->insert('meter_record', $data);
+            echo 'Inserted ' . $item['DeviceDescription'] . ' at ' . get_times_now() . ' excecuted.' . PHP_EOL;
         }
-
-//        for($idx = 0; $idx < count($dec); $idx++){
-//            $obj = (Array)$dec[$idx];
-//            echo $obj["IdDataLog"] . '</br>';
-//        }
-
-//        $this->db->insert('test', array('date'=> get_times_now()));
-//        echo 'Inserted on ' . get_times_now() . ' excecuted.' . PHP_EOL;
     }
 }

@@ -8,25 +8,25 @@ function localFolder(host) {
 const APP_VERSION = sessionStorage.getItem("app_version");
 const URL = document.location.toString();
 const ACCESS_TOKEN = 'pk.eyJ1IjoiaGFlcnVsbXV0dGFxaW4iLCJhIjoiY2oyam1wYjU2MDAwcDJ4bnFtcTNuYjF0cyJ9.dZKKL4w4CwzG4wAeYdTLjA';
-if (sessionStorage.getItem("user_data") === null) {
-    $.ajax({
-        url: BASE_URL + 'auth/get_token/',
-        method: 'post',
-        success: function (data) {
-            let result = JSON.parse(data);
-            if (result.status) {
-                sessionStorage.setItem("app_version", result.app_data.app_version);
-                sessionStorage.setItem("app_name", result.app_data.app_name);
-                sessionStorage.setItem("user_data", JSON.stringify(result.user_data[0]));
-            } else {
-                toastr.error("User unauthorized! - please login again!" + JSON.stringify(err));
-            }
-        },
-        error: function (err) {
-            toastr.error("User unauthorized! - please login again!" + JSON.stringify(err));
-        }
-    })
-}
+// if (sessionStorage.getItem("user_data") === null) {
+//     $.ajax({
+//         url: BASE_URL + 'auth/get_token/',
+//         method: 'post',
+//         success: function (data) {
+//             let result = JSON.parse(data);
+//             if (result.status) {
+//                 sessionStorage.setItem("app_version", result.app_data.app_version);
+//                 sessionStorage.setItem("app_name", result.app_data.app_name);
+//                 sessionStorage.setItem("user_data", JSON.stringify(result.user_data[0]));
+//             } else {
+//                 toastr.error("User unauthorized! - please login again!" + JSON.stringify(err));
+//             }
+//         },
+//         error: function (err) {
+//             toastr.error("User unauthorized! - please login again!" + JSON.stringify(err));
+//         }
+//     })
+// }
 const USER_DATA = JSON.parse(sessionStorage.getItem("user_data"));
 const ticksStyle = {
     fontColor: '#495057',

@@ -3,9 +3,7 @@
         <div class="col-lg-6">
             <div class="card card-primary" style="height: 100%;">
                 <div class="card-body">
-                    <center>
-                        <b>RASIO DAYA PANEL LANTAI PER BULAN</b>
-                    </center>
+                    <h4 class="text-bold text-center">RASIO DAYA PANEL LANTAI PER BULAN</h4>
                     <div id="main" style="height: 900px;"></div>
                 </div>
             </div>
@@ -13,63 +11,30 @@
         <div class="col-lg-6">
             <div class="card card-primary">
                 <div class="card-body">
-                    <center>
-                        <b>PENGUKURAN DAYA LANTAI</b>
-                    </center>
+                    <h4 class="text-bold text-center">PENGUKURAN DAYA LANTAI</h4>
                     <table class="table" style="height: 100%;">
                         <thead class="thead-dark">
                             <tr>
-                                <th scope="col">Measuerement</th>
-                                <th scope="col">PM Stop Kontak Lantai</th>
-                                <th scope="col">PM AC/AHU</th>
-                                <th scope="col">PM Penerangan</th>
-                                <th scope="col">PM Lift</th>
+                                <th scope="col">MEASUREMENT</th>
+                                <th scope="col">PM LIFT</th>
+                                <th scope="col">PM PENERANGAN DAN STOP KONTAK </th>
+                                <th scope="col">PM ELEKTRONIK</th>
+                                <th scope="col">PM TATA UDARA</th>
+                                <th scope="col">PM TATA AIR</th>
                             </tr>
                         </thead>
+                        <?php foreach ($data as $item) : ?>
                         <tbody>
                             <tr>
-                                <th>Current Avg</th>
-                                <th>0</th>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                                <th>Frequency</th>
-                                <th>0</th>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                                <th>Power Factor</th>
-                                <th>0</th>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                                <th>Measuerement dummy</th>
-                                <th>0</th>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                                <th>Measuerement dummy</th>
-                                <th>0</th>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                                <th>Measuerement dummy</th>
-                                <th>0</th>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
+                                <th><?= $item['caption'] ?></th>
+                                <th><?= $item['value_lift'] ?></th>
+                                <td><?= $item['value_penerangan'] ?></td>
+                                <td><?= $item['value_elektronik'] ?></td>
+                                <td><?= $item['value_udara'] ?></td>
+                                <td><?= $item['value_air'] ?></td>
                             </tr>
                         </tbody>
+                        <?php endforeach; ?>
                     </table>
 
                 </div>
