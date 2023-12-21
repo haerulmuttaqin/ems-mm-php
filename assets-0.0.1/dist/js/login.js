@@ -1,4 +1,5 @@
-import { BASE_URL } from "./main.js";
+import {BASE_URL} from "./main.js";
+
 $(document).ready(function () {
     setTimeout(function () {
         $("#username").val('');
@@ -118,7 +119,7 @@ function login(baseUrl) {
             event.preventDefault();
             // Trigger the button element with a click
             document.getElementById("login").click();
-          }
+        }
     })
 
     function processLogin() {
@@ -164,8 +165,8 @@ function login(baseUrl) {
                         sessionStorage.setItem("app_name", result.app_data.app_name);
                         sessionStorage.setItem("user_data", JSON.stringify(result.user_data[0]));
                         // sessionStorage.setItem("current_menu", '24FDB81A-B5F9-4326-A09B-7135C90D6C48');
-                        toastr.success("Login Succesfully!");
-                        window.location.href = baseUrl + 'dashboard/'
+                        toastr.success("Login Successfully!");
+                        window.location.href = baseUrl + 'home/'
                     } else {
                         toastr.error("Login Failed! " + result.message);
                         $('#login').text('LOGIN');

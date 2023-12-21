@@ -18,22 +18,6 @@ function check_menu_access()
     }
 }
 
-function meter_last_record()
-{
-    $ci = get_instance();
-    $query = "select date(max(record_date) + interval '1' day) last_record_date from meter_record";
-    $queryData = $ci->db->query($query)->row_array();
-    return $queryData['last_record_date'];
-}
-
-function meter_last_record_date_time()
-{
-    $ci = get_instance();
-    $query = "select max(record_date) last_record_date from meter_record";
-    $queryData = $ci->db->query($query)->row_array();
-    return $queryData['last_record_date'];
-}
-
 function is_logged_in()
 {
     $ci = get_instance();

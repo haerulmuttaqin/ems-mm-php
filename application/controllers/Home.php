@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
-class Dashboard extends CI_Controller
+class Home extends CI_Controller
 {
     public function __construct()
     {
@@ -13,7 +13,7 @@ class Dashboard extends CI_Controller
     {
         $data['menu'] = $this->menu->getMenu();
         $data['user_data'] = $this->user->getUserById($this->session->userdata('user_sid'));
-        $data['title'] = 'Dashboard';
+        $data['title'] = 'Home';
         $this->load->view('_partials/header', $data);
         $this->load->view('home/index', $data);
         $this->load->view('_partials/footer');   
@@ -23,7 +23,7 @@ class Dashboard extends CI_Controller
     {
         $data['menu'] = $this->menu->getMenu();
         $data['user_data'] = $this->user->getUserById($this->session->userdata('user_sid'));
-        $data['title'] = 'Dashboard';
+        $data['title'] = 'Home';
         $this->load->view('_partials/header', $data);
         $this->load->view('home/item', $data);
         $this->load->view('_partials/footer');

@@ -151,17 +151,17 @@ Developed by Haerul Muttaqin - Nov 2020
                                       on user_menu.menu_sid = user_sub_menu.menu_sid
                                left join user_access_menu 
                                       on user_sub_menu.sub_sid = user_access_menu.menu_sid
-                                   where user_access_menu.role_sid = '$role_id' and user_menu.menu != 'Dashboard'
+                                   where user_access_menu.role_sid = '$role_id' and user_menu.menu != 'Home'
                                 group by user_menu.menu_sid
                                 order by user_menu.sort asc ";
 
                         $menu = $this->db->query($queryMenu)->result_array();
                         ?>
 
-                        <li class="nav-item <?php if ('Dashboard' == $title) echo 'menu-open' ?>">
-                            <a href="<?= base_url('dashboard') ?>" class="nav-link">
+                        <li class="nav-item <?php if ('Home' == $title) echo 'menu-open' ?>">
+                            <a href="<?= base_url('home') ?>" class="nav-link">
                                 <i class="cil-bar-chart nav-icon"></i>
-                                <p style="text-transform: capitalize;">Dashboard</p>
+                                <p style="text-transform: capitalize;">Home</p>
                             </a>
                         </li>
 
@@ -260,13 +260,6 @@ Developed by Haerul Muttaqin - Nov 2020
 
                         </li>
 
-                        <div style="color:#1bb43f" class="mt-3" title="The last data recorded on <?= meter_last_record_date_time() ?>" data-toggle="tooltip" data-placement="bottom">
-                            <small class="ml-4 mt-4 text-sm">Last recorded</small>
-                            <br>
-                            <span class="ml-4 text-sm">
-                                <?= meter_last_record_date_time() ?>
-                            </span>
-                        </div>
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
@@ -278,7 +271,7 @@ Developed by Haerul Muttaqin - Nov 2020
         <div class="content-wrapper">
 
             <!-- Content Header (Page header) -->
-            <?php if ($title != 'Dashboard' && $title != 'Meter Data') : ?>
+            <?php if ($title != 'Home') : ?>
                 <div class="content-header mb-3">
                     <div class="container-fluid">
                         <div class="row">
