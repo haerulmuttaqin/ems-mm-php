@@ -120,6 +120,7 @@ Developed by Haerul Muttaqin - Nov 2020
 
                         <div class="user-panel mt-2 pb-2 mb-2 d-flex">
                             <?php
+                            is_logged_in();
                             $user_unit = $this->db->get_where('generic_references', array('ref_sid' => $user_data['user_unit']))->row_array();
                             $default = base_url('assets-' . app_version() . '/') . 'dist/img/user-profile-default.jpg';
                             if ($this->session->userdata('profile_img') != null) {

@@ -1,1 +1,0 @@
-"C:\xampp\php\php.exe" -f "C:\xampp\htdocs\ems.mm\index.php" Collector dashboard1

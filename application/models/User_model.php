@@ -94,6 +94,8 @@ class User_model extends CI_Model
 
         $this->db->from($this->table);
 
+        $this->db->where('user_uid !=', '000000-0000');
+
         if (intval($this->session->userdata('user_role_value')) > 0) { // level uid
             // $this->db->where('parent_sid', $this->session->userdata('user_up3'));
             $this->db->where('role_val >', 1);
@@ -103,7 +105,7 @@ class User_model extends CI_Model
             $this->db->where('parent_sid', $this->session->userdata('user_up3'));
             $this->db->where('role_val >', 2);
         }
-        
+
         if (intval($this->session->userdata('user_role_value')) > 2) { // level ulp
             $this->db->where('user_unit', $this->session->userdata('user_unit'));
             $this->db->where('role_val >', 3);

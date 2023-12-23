@@ -3,12 +3,12 @@
         <div class="col-lg-6">
             <div class="card card-primary" style="height: 100%;">
                 <div class="card-body">
+                    <h5 class="text-bold text-center">TREND DAYA 1 HARIAN TERHADAP HARI YANG SAMA
+                        MINGGU LALU</h5>
+                    <div id="chart1" style="height: 270px;"></div>
                     <h5 class="text-bold text-center">TREND DAYA PAKAI HARIAN TERHADAP HARI YANG
                         SAMA BULAN LALU
                     </h5>
-                    <div id="chart1" style="height: 270px;"></div>
-                    <h5 class="text-bold text-center">TREND DAYA 1 HARIAN TERHADAP HARI YANG SAMA
-                        MINGGU LALU</h5>
                     <div id="chart2" style="height: 270px;"></div>
                     <h5 class="text-bold text-center">TREND HARIAN TERHADAP MINGGUAAN</h5>
                     <div id="chart3" style="height: 270px;"></div>
@@ -19,60 +19,27 @@
         <div class="col-lg-6">
             <div class="card card-primary">
                 <div class="card-body">
-                    <h4 class="text-bold text-center">TABEL PENGUKURAN UTAMA</h4>
+                    <h4 class="text-bold text-center">TABEL PENGUKURAN PANEL UTAMA</h4>
                     <table class="table" style="height: 100%;">
                         <thead class="thead-dark">
                         <tr>
-                            <th scope="col">Measuerement</th>
-                            <th scope="col">PM Stop Kontak Lantai</th>
-                            <th scope="col">PM AC/AHU</th>
-                            <th scope="col">PM Penerangan</th>
-                            <th scope="col">PM Lift</th>
+                            <th scope="col" style="width: 16%; vertical-align: middle;">MEASUREMENT</th>
+                            <th scope="col" style="width: 16%; vertical-align: middle;">PANEL UTAMA 1 (LVMDP C1)</th>
+                            <th scope="col" style="width: 16%; vertical-align: middle;">PANEL UTAMA 2 (LVMDP C2)</th>
+                            <th scope="col" style="width: 16%; vertical-align: middle;">PANEL UTAMA 3 (LVMDP 28)</th>
                         </tr>
                         </thead>
+
+
                         <tbody>
-                        <tr>
-                            <th>Current Avg</th>
-                            <th>0</th>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <th>Frequency</th>
-                            <th>0</th>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <th>Power Factor</th>
-                            <th>0</th>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <th>Measuerement dummy</th>
-                            <th>0</th>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <th>Measuerement dummy</th>
-                            <th>0</th>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <th>Measuerement dummy</th>
-                            <th>0</th>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
+                        <?php foreach ($data as $item) : ?>
+                            <tr>
+                                <th><?= $item['caption'] ?></th>
+                                <td><?= $item['value_lvmdp_c1'] ?></td>
+                                <td><?= $item['value_lvmdp_c2'] ?></td>
+                                <td><?= $item['value_lvmdp_28'] ?></td>
+                            </tr>
+                        <?php endforeach; ?>
                         </tbody>
                     </table>
 

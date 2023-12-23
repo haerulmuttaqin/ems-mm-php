@@ -1,0 +1,338 @@
+﻿[
+    {
+        "IdDataLog": 57,
+        "TimeStamp": "2023-12-12T17:14:00",
+        "IdDevice": 11,
+        "DeviceDescription": "SDP - SB",
+        "MeasureList": {
+            "M300": {
+                "Description": "kWh",
+                "Value": "416950.33"
+            },
+            "M1445": {
+                "Description": "Thd A1 AVG",
+                "Value": "0.15"
+            },
+            "M400": {
+                "Description": "kW EQV",
+                "Value": "55.12"
+            },
+            "M14": {
+                "Description": "kVA EQV",
+                "Value": "59.06"
+            },
+            "M36": {
+                "Description": "A EQV",
+                "Value": "120.34"
+            },
+            "M11": {
+                "Description": "V L-L EQV ",
+                "Value": "284.07"
+            },
+            "M15": {
+                "Description": "PF TOT",
+                "Value": "0.93"
+            },
+            "M13": {
+                "Description": "kvar EQV",
+                "Value": "21.76"
+            },
+            "M35": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M18": {
+                "Description": "kvarh",
+                "Value": "192820.85"
+            }
+        }
+    },
+    {
+        "IdDataLog": 57,
+        "TimeStamp": "2023-12-12T16:13:50",
+        "IdDevice": 11,
+        "DeviceDescription": "SDP - SB",
+        "MeasureList": {
+            "M300": {
+                "Description": "kWh",
+                "Value": "416950.17"
+            },
+            "M1445": {
+                "Description": "Thd A1 AVG",
+                "Value": "0.16"
+            },
+            "M400": {
+                "Description": "kW EQV",
+                "Value": "55.11"
+            },
+            "M14": {
+                "Description": "kVA EQV",
+                "Value": "59.23"
+            },
+            "M36": {
+                "Description": "A EQV",
+                "Value": "120.47"
+            },
+            "M11": {
+                "Description": "V L-L EQV ",
+                "Value": "284.03"
+            },
+            "M15": {
+                "Description": "PF TOT",
+                "Value": "0.93"
+            },
+            "M13": {
+                "Description": "kvar EQV",
+                "Value": "21.82"
+            },
+            "M35": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M18": {
+                "Description": "kvarh",
+                "Value": "192820.79"
+            }
+        }
+    },
+    {
+        "IdDataLog": 57,
+        "TimeStamp": "2023-12-12T16:13:40",
+        "IdDevice": 11,
+        "DeviceDescription": "SDP - SB",
+        "MeasureList": {
+            "M300": {
+                "Description": "kWh",
+                "Value": "416949.96"
+            },
+            "M1445": {
+                "Description": "Thd A1 AVG",
+                "Value": "0.08"
+            },
+            "M400": {
+                "Description": "kW EQV",
+                "Value": "55.21"
+            },
+            "M14": {
+                "Description": "kVA EQV",
+                "Value": "59.24"
+            },
+            "M36": {
+                "Description": "A EQV",
+                "Value": "120.12"
+            },
+            "M11": {
+                "Description": "V L-L EQV ",
+                "Value": "283.8"
+            },
+            "M15": {
+                "Description": "PF TOT",
+                "Value": "0.93"
+            },
+            "M13": {
+                "Description": "kvar EQV",
+                "Value": "21.8"
+            },
+            "M35": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M18": {
+                "Description": "kvarh",
+                "Value": "192820.7"
+            }
+        }
+    },
+    {
+        "IdDataLog": 57,
+        "TimeStamp": "2023-12-12T16:13:25",
+        "IdDevice": 11,
+        "DeviceDescription": "SDP - SB",
+        "MeasureList": {
+            "M300": {
+                "Description": "kWh",
+                "Value": "416949.78"
+            },
+            "M1445": {
+                "Description": "Thd A1 AVG",
+                "Value": "0.21"
+            },
+            "M400": {
+                "Description": "kW EQV",
+                "Value": "55.12"
+            },
+            "M14": {
+                "Description": "kVA EQV",
+                "Value": "59.29"
+            },
+            "M36": {
+                "Description": "A EQV",
+                "Value": "120.53"
+            },
+            "M11": {
+                "Description": "V L-L EQV ",
+                "Value": "283.86"
+            },
+            "M15": {
+                "Description": "PF TOT",
+                "Value": "0.93"
+            },
+            "M13": {
+                "Description": "kvar EQV",
+                "Value": "21.79"
+            },
+            "M35": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M18": {
+                "Description": "kvarh",
+                "Value": "192820.64"
+            }
+        }
+    },
+    {
+        "IdDataLog": 57,
+        "TimeStamp": "2023-12-12T16:13:15",
+        "IdDevice": 11,
+        "DeviceDescription": "SDP - SB",
+        "MeasureList": {
+            "M300": {
+                "Description": "kWh",
+                "Value": "416949.63"
+            },
+            "M1445": {
+                "Description": "Thd A1 AVG",
+                "Value": "0.17"
+            },
+            "M400": {
+                "Description": "kW EQV",
+                "Value": "55.17"
+            },
+            "M14": {
+                "Description": "kVA EQV",
+                "Value": "59.33"
+            },
+            "M36": {
+                "Description": "A EQV",
+                "Value": "120.62"
+            },
+            "M11": {
+                "Description": "V L-L EQV ",
+                "Value": "283.48"
+            },
+            "M15": {
+                "Description": "PF TOT",
+                "Value": "0.93"
+            },
+            "M13": {
+                "Description": "kvar EQV",
+                "Value": "21.68"
+            },
+            "M35": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M18": {
+                "Description": "kvarh",
+                "Value": "192820.58"
+            }
+        }
+    },
+    {
+        "IdDataLog": 57,
+        "TimeStamp": "2023-12-12T16:13:05",
+        "IdDevice": 11,
+        "DeviceDescription": "SDP - SB",
+        "MeasureList": {
+            "M300": {
+                "Description": "kWh",
+                "Value": "416949.46"
+            },
+            "M1445": {
+                "Description": "Thd A1 AVG",
+                "Value": "0.1"
+            },
+            "M400": {
+                "Description": "kW EQV",
+                "Value": "55.05"
+            },
+            "M14": {
+                "Description": "kVA EQV",
+                "Value": "59.22"
+            },
+            "M36": {
+                "Description": "A EQV",
+                "Value": "120.42"
+            },
+            "M11": {
+                "Description": "V L-L EQV ",
+                "Value": "283.38"
+            },
+            "M15": {
+                "Description": "PF TOT",
+                "Value": "0.93"
+            },
+            "M13": {
+                "Description": "kvar EQV",
+                "Value": "21.48"
+            },
+            "M35": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M18": {
+                "Description": "kvarh",
+                "Value": "192820.52"
+            }
+        }
+    },
+    {
+        "IdDataLog": 57,
+        "TimeStamp": "2023-12-12T18:12:55",
+        "IdDevice": 11,
+        "DeviceDescription": "SDP - SB",
+        "MeasureList": {
+            "M300": {
+                "Description": "kWh",
+                "Value": "416949.27"
+            },
+            "M1445": {
+                "Description": "Thd A1 AVG",
+                "Value": "0.09"
+            },
+            "M400": {
+                "Description": "kW EQV",
+                "Value": "55.26"
+            },
+            "M14": {
+                "Description": "kVA EQV",
+                "Value": "59.16"
+            },
+            "M36": {
+                "Description": "A EQV",
+                "Value": "120.82"
+            },
+            "M11": {
+                "Description": "V L-L EQV ",
+                "Value": "282.95"
+            },
+            "M15": {
+                "Description": "PF TOT",
+                "Value": "0.93"
+            },
+            "M13": {
+                "Description": "kvar EQV",
+                "Value": "21.48"
+            },
+            "M35": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M18": {
+                "Description": "kvarh",
+                "Value": "192820.44"
+            }
+        }
+    }
+]

@@ -34,4 +34,6 @@ Developed by Haerul Muttaqin - Nov 2020
     <link rel="shortcut icon" href="<?= base_url('assets-' . app_version() . '/') ?>dist/img/favicon.png" />
 
 </head>
+<input type="hidden" id="unit" value="<?= $unit ?>">
+<input type="hidden" id="user_data" value="<?= json_encode($user_data) ?>">
 <body style="height: 100%;">

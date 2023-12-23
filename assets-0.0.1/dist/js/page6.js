@@ -3,6 +3,9 @@ import {BASE_URL, APP_VERSION, ticksStyle, showDialogError} from "./main.js";
 $(function () {
     "use strict";
 
+    const unit = $('#unit').val()
+
+
     const chartDom1 = document.getElementById("chart1");
     const chartDom2 = document.getElementById("chart2");
     const chartDom3 = document.getElementById("chart3");
@@ -10,7 +13,8 @@ $(function () {
     const myChart2 = echarts.init(chartDom2);
     const myChart3 = echarts.init(chartDom3);
     let option;
-    $.get(BASE_URL + 'pages/page1/pie_data', function (result) {
+
+    $.get(BASE_URL + 'show/page1/pie_data/mm', function (result) {
 
         const data = JSON.parse(result)
 
@@ -55,6 +59,6 @@ $(function () {
 
 
     setTimeout(() => {
-        window.location.replace(BASE_URL + "pages/page7");
+        window.location.replace(BASE_URL + "show/page7/"+unit);
     }, 5000);
 });

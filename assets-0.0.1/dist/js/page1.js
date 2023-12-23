@@ -3,10 +3,12 @@ import {BASE_URL, APP_VERSION, ticksStyle, showDialogError} from "./main.js";
 $(function () {
     "use strict";
 
+    const unit = $('#unit').val()
+
     const chartDom = document.getElementById("main");
     const myChart = echarts.init(chartDom);
     let option;
-    $.get(BASE_URL + 'pages/page1/pie_data', function (result) {
+    $.get(BASE_URL + 'show/page1/pie_data/' + unit, function (result) {
 
         const data = JSON.parse(result)
 
@@ -75,6 +77,6 @@ $(function () {
 
 
     setTimeout(() => {
-        window.location.replace(BASE_URL + "pages/page2");
+        window.location.replace(BASE_URL + "show/page2/"+unit);
     }, 5000);
 });

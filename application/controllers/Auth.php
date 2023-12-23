@@ -40,19 +40,19 @@ class Auth extends CI_Controller
             $user['user_role_sid'] = $role['ref_sid'];
             $user['user_role_name'] = $role['ref_name'];
             $user['user_role_value'] = $role['ref_value'];
-            if ($role['ref_description'] == 'IS_ADMIN' && $user['is_active'] == 1) {
+            if (($role['ref_description'] == 'SUPER' || $role['ref_description'] == 'IS_ADMIN') && $user['is_active'] == 1) {
                 if (password_verify($password, $user['user_password'])) {
                     $data = $user;
                     /*$result_data = $this->db->get_where('base64_data', array('parent_sid' => $user['user_sid']))->row_array();
                     if ($result_data['data'] != null) {
                         $data['profile_img'] = $result_data['data'];
                     }*/
-                    $ulp = $this->master->getGenericBySid($user['user_unit']);
+                    /*$ulp = $this->master->getGenericBySid($user['user_unit']);
                     if ($ulp) {
                         $up3 = $this->master->getGenericBySid($ulp['parent_sid']);
                         $data['user_uiw'] = $up3['parent_sid'];
                         $data['user_up3'] = $up3['ref_sid'];
-                    }
+                    }*/
                     $data['user_token'] = $this->getUserToken($data['user_sid'])['auth_token'];
                     if ($data['user_token'] == null) {
                         $token = $this->generateToken($data['user_sid']);

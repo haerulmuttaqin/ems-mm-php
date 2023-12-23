@@ -13,6 +13,7 @@ class Home extends CI_Controller
     {
         $data['menu'] = $this->menu->getMenu();
         $data['user_data'] = $this->user->getUserById($this->session->userdata('user_sid'));
+        $data['unit_data'] = $this->master->getGenericByCategoryName('UNIT');
         $data['title'] = 'Home';
         $this->load->view('_partials/header', $data);
         $this->load->view('home/index', $data);

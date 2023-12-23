@@ -12,10 +12,21 @@ class Meter extends Rest_lib
     public function __construct()
     {
         parent::__construct();
-        $this->verify_request();
+//        $this->verify_request();
         $user_sid = null;
         $this->load->helper('file');
         $this->load->model('Master_model', 'master');
+    }
+
+    function remove_utf8_bom($text)
+    {
+        $bom = pack('H*','EFBBBF');
+        return preg_replace("/^$bom/", '', $text);
+    }
+
+    public function demo_data_with_auth_get()
+    {
+        echo json_encode(array("data" => 123, "data2" => 456, "header" => $this->input->request_headers()));
     }
 
     public function index_put()

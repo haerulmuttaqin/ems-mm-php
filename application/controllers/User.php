@@ -43,7 +43,7 @@ class User extends CI_Controller {
 
         $this->form_validation->set_rules('no_induk', 'No Induk', 'required');
         $this->form_validation->set_rules('nama', 'Nama', 'required');
-        $this->form_validation->set_rules('hak[]', 'Hak User', 'required');
+        $this->form_validation->set_rules('role', 'Hak User', 'required');
         $this->form_validation->set_rules('unit', 'Unit', 'required');
         $this->form_validation->set_rules('user_login_name', 'Username Login', 'required|is_unique[users.user_login_name]');
         $this->form_validation->set_rules('password1', 'Password Login', 'min_length[4]|matches[password2]');
@@ -67,17 +67,22 @@ class User extends CI_Controller {
                 'user_unit' => trim(htmlspecialchars($this->input->post('unit'))),
                 'user_login_name' => trim(htmlspecialchars($this->input->post('user_login_name'))),
                 'user_password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
-                'user_role_sid' => trim(htmlspecialchars($this->input->post('hak[]'))),
+                'user_role_sid' => $this->input->post('role'),
                 'is_active' => trim(htmlspecialchars($this->input->post('active'))),
                 'date_created' => get_times_now()
             ));
-            foreach ($this->input->post('hak') as $selectedOption) {
-                $this->db->insert('users_roles', array(
-                    'ur_sid' => $this->uuid->sid(),
-                    'ur_user_sid' => $user_sid_new,
-                    'ur_role_sid' => $selectedOption
-                ));
-            }
+            $this->db->insert('users_roles', array(
+                'ur_sid' => $this->uuid->sid(),
+                'ur_user_sid' => $user_sid_new,
+                'ur_role_sid' => $this->input->post('role')
+            ));
+//            foreach ($this->input->post('roles') as $selectedOption) {
+//                $this->db->insert('users_roles', array(
+//                    'ur_sid' => $this->uuid->sid(),
+//                    'ur_user_sid' => $user_sid_new,
+//                    'ur_role_sid' => $selectedOption
+//                ));
+//            }
             $this->toastr->success('New data added!');
             redirect('user');
 
@@ -96,7 +101,7 @@ class User extends CI_Controller {
 
         $this->form_validation->set_rules('no_induk', 'No Induk', 'required');
         $this->form_validation->set_rules('nama', 'Nama', 'required');
-        $this->form_validation->set_rules('hak[]', 'Hak User', 'required');
+        $this->form_validation->set_rules('role', 'Hak User', 'required');
         $this->form_validation->set_rules('unit', 'Unit', 'required');
         $this->form_validation->set_rules('password1', 'Password Login', 'min_length[4]|matches[password2]');
         $this->form_validation->set_rules('password2', 'Confirm Password', 'min_length[4]|matches[password1]');
@@ -117,7 +122,7 @@ class User extends CI_Controller {
                     'user_bagian' => trim(htmlspecialchars($this->input->post('bagian'))),
                     'user_unit' => trim(htmlspecialchars($this->input->post('unit'))),
                     'user_login_name' => trim(htmlspecialchars($this->input->post('user_login_name'))),
-                    'user_role_sid' => trim(htmlspecialchars($this->input->post('hak[]'))),
+                    'user_role_sid' => $this->input->post('role'),
                     'user_password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
                     'is_active' => trim(htmlspecialchars($this->input->post('active'))),
                     'date_modified' => get_times_now()
@@ -132,19 +137,24 @@ class User extends CI_Controller {
                     'user_bagian' => trim(htmlspecialchars($this->input->post('bagian'))),
                     'user_unit' => trim(htmlspecialchars($this->input->post('unit'))),
                     'user_login_name' => trim(htmlspecialchars($this->input->post('user_login_name'))),
-                    'user_role_sid' => trim(htmlspecialchars($this->input->post('hak[]'))),
+                    'user_role_sid' => $this->input->post('role'),
                     'is_active' => trim(htmlspecialchars($this->input->post('active'))),
                     'date_modified' => get_times_now()
                 ));
             }
             if ($this->_deleteRoleByUserSid($this->input->post('id'))) {
-                foreach ($this->input->post('hak') as $selectedOption) {
-                    $this->db->insert('users_roles', array(
-                        'ur_sid' => $this->uuid->sid(),
-                        'ur_user_sid' => $this->input->post('id'),
-                        'ur_role_sid' => $selectedOption
-                    ));
-                }
+//                foreach ($this->input->post('hak') as $selectedOption) {
+//                    $this->db->insert('users_roles', array(
+//                        'ur_sid' => $this->uuid->sid(),
+//                        'ur_user_sid' => $this->input->post('id'),
+//                        'ur_role_sid' => $this->input->post('role')
+//                    ));
+//                }
+                $this->db->insert('users_roles', array(
+                    'ur_sid' => $this->uuid->sid(),
+                    'ur_user_sid' => $this->input->post('id'),
+                    'ur_role_sid' => $this->input->post('role')
+                ));
             }
             $this->toastr->success('Data updated!');
             redirect('user');
@@ -157,9 +167,9 @@ class User extends CI_Controller {
         $data['title'] = 'Profile';
         $data['menu'] = $this->menu->getMenu();
         $data['user'] = $this->user->getUserById($this->session->userdata('user_sid'));
-        $data['ulp'] = $this->master->getGenericByCategoryName('ULP');
-        $data['jabatan'] = $this->master->getGenericByCategoryName('JABATAN');
-        $data['bagian'] = $this->master->getGenericByCategoryName('BAGIAN');
+//        $data['ulp'] = $this->master->getGenericByCategoryName('ULP');
+//        $data['jabatan'] = $this->master->getGenericByCategoryName('JABATAN');
+//        $data['bagian'] = $this->master->getGenericByCategoryName('BAGIAN');
         $data['hak_user'] = $this->master->getGenericByCategoryName('USER ROLE');
         $data['user_roles'] = $this->master->getUserRolesJoin($this->session->userdata('user_sid'));
         $data['user_data'] = $this->user->getUserById($this->session->userdata('user_sid'));

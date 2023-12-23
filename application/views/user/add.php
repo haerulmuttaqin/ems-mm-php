@@ -82,7 +82,7 @@
                                     <!-- select -->
                                     <div class="form-group">
                                         <label>User Role</label>
-                                        <select value="<?= set_value('hak') ?>" name="hak[]"
+                                        <select value="<?= set_value('roles') ?>" name="role"
                                                 class="form-control select-role select2" style="width: 100% !important;">
                                             <option selected disabled></option>
                                             <?php foreach ($user_roles as $item) : ?>
@@ -99,7 +99,7 @@
                                                 <?php endif; ?>
                                             <?php endforeach; ?>
                                         </select>
-                                        <?= form_error('hak', '<small class="text-danger">', '</small>') ?>
+                                        <?= form_error('role', '<small class="text-danger">', '</small>') ?>
                                     </div>
 
                                     <div class="form-group">
