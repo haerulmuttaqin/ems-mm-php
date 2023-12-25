@@ -20,7 +20,7 @@ class Page2 extends CI_Controller
             $this->chart_data($unit2[0]);
             return;
         }
-        $data['title'] = 'Page 1';
+        $data['title'] = 'Page 2';
         $data['unit'] = $unit;
         $data['user_data'] = $this->user->getUserById($this->session->userdata('user_sid'));
         $data['data'] = $this->page->getTableData($unit);

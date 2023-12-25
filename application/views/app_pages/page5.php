@@ -12,67 +12,14 @@
                             <th scope="col">REACTIVE ENERGY IMPORT</th>
                         </tr>
                         </thead>
-                        <tbody>
-                        <tr>
-                            <td>SDP 1</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>SDP 2</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>SDP 1</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>SDP 2</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>SDP 1</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>SDP 2</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>SDP 1</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>SDP 2</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>SDP 1</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>SDP 2</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>SDP 1</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>SDP 2</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
+                         <tbody>
+                            <?php foreach ($data as $item) : ?>
+                            <tr>
+                                <th><?= $item['caption'] ?></th>
+                                <td><?= $item['value_active_e'] ?: 0 ?></td>
+                                <td><?= $item['value_reactive_e'] ?: 0 ?></td>
+                            </tr>
+                            <?php endforeach; ?>
                         </tbody>
                     </table>
 
@@ -82,7 +29,7 @@
         <div class="col-lg-6">
             <div class="card card-primary">
                 <div class="card-body">
-                    <h4 class="text-bold text-center">RASIO DAYA LAMPU PER LANTAI</h4>
+                    <h4 class="text-bold text-center">RASIO DAYA PENERANGAN PER LANTAI</h4>
                     <div id="chart1" style="height: 370px;"></div>
                 </div>
             </div>
@@ -90,7 +37,7 @@
                 <div class="col-lg-6">
                     <div class="card card-primary" style="height: 100%;">
                         <div class="card-body">
-                            <h4 class="text-bold text-center">COMPUTER</h4>
+                            <h4 class="text-bold text-center">ELEKTRONIK</h4>
                             <div id="chart2" style="height: 360px;"></div>
                         </div>
                     </div>

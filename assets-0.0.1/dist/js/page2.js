@@ -1,4 +1,4 @@
-import {BASE_URL, APP_VERSION, ticksStyle, showDialogError} from "./main.js";
+import {BASE_URL, APP_VERSION, ticksStyle, getDaysInMonth} from "./main.js";
 
 $(function () {
     "use strict";
@@ -32,6 +32,15 @@ $(function () {
                 }
             }
         }
+        const dayOfWeek = ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum`at', 'Sabtu', 'Minggu']
+        const lastWeek = []
+        const thisWeek = []
+        dayOfWeek.map((day) => {
+            const itemLast = data['chart1_last_week'].find((it) => it['date_time'] === day)
+            const itemThis = data['chart1_this_week'].find((it) => it['date_time'] === day)
+            lastWeek.push(itemLast || {date_time: day, value: 0})
+            thisWeek.push(itemThis || {date_time: day, value: 0})
+        })
         option1 = {
             tooltip: tooltipOpt,
             toolbox: tooltipBox,
@@ -42,7 +51,8 @@ $(function () {
             xAxis: [
                 {
                     type: 'category',
-                    data: data['chart1_last_week'].map((it) => it['date_time']),
+                    // data: data['chart1_last_week'].map((it) => it['date_time']),
+                    data: dayOfWeek,
                     axisPointer: {
                         type: 'shadow'
                     }
@@ -69,7 +79,8 @@ $(function () {
                             return value + ' ml';
                         }
                     },
-                    data: data['chart1_last_week'].map((it) => it['value']),
+                    // data: data['chart1_last_week'].map((it) => it['value']),
+                    data: lastWeek
                 },
                 {
                     name: 'This Week',
@@ -79,10 +90,22 @@ $(function () {
                             return value + ' ml';
                         }
                     },
-                    data: data['chart1_this_week'].map((it) => it['value']),
+                    // data: data['chart1_this_week'].map((it) => it['value']),
+                    data: thisWeek
                 },
             ]
         };
+
+
+        // chart2
+        const lastMonth = []
+        const thisMonth = []
+        getDaysInMonth().map((day) => {
+            const itemLast = data['chart2_last_month'].find((it) => it['date_time'] === day)
+            const itemThis = data['chart2_this_month'].find((it) => it['date_time'] === day)
+            lastMonth.push(itemLast || {date_time: day, value: 0})
+            thisMonth.push(itemThis || {date_time: day, value: 0})
+        })
         option2 = {
             tooltip: tooltipOpt,
             toolbox: tooltipBox,
@@ -93,9 +116,15 @@ $(function () {
             xAxis: [
                 {
                     type: 'category',
-                    data: data['chart2_last_month'].map((it) => it['date_time']),
+                    data: getDaysInMonth(),
                     axisPointer: {
                         type: 'shadow'
+                    },
+                    axisLabel: {
+                        interval: 0,
+                        // formatter: (function(value){
+                        //     if (value) return moment(value).format('DD');
+                        // })
                     }
                 }
             ],
@@ -120,7 +149,7 @@ $(function () {
                             return value + ' ml';
                         }
                     },
-                    data: data['chart2_last_month'].map((it) => it['value']),
+                    data: lastMonth,
                 },
                 {
                     name: 'This Month',
@@ -130,10 +159,12 @@ $(function () {
                             return value + ' ml';
                         }
                     },
-                    data: data['chart2_this_month'].map((it) => it['value']),
+                    data: thisMonth,
                 },
             ]
         };
+
+
         option3 = {
             tooltip: tooltipOpt,
             toolbox: tooltipBox,
@@ -194,5 +225,5 @@ $(function () {
 
     setTimeout(() => {
         window.location.replace(BASE_URL + "show/page3/"+unit);
-    }, 5000);
+    }, 10000);
 });

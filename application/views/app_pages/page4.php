@@ -4,7 +4,7 @@
             <div class="card card-primary" style="height: 100%;">
                 <div class="card-body">
                     <h4 class="text-bold text-center">BEBAN DAYA BULAN INI</h4>
-                    <div id="chart1" style="height: 800px;"></div>
+                    <div id="chart1" style="height: 850px;"></div>
                 </div>
             </div>
         </div>

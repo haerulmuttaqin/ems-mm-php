@@ -7,7 +7,7 @@ class Page3 extends CI_Controller
     {
         parent::__construct();
         is_logged_in();
-        // $this->load->model('Page2_model', 'page');
+        $this->load->model('Page3_model', 'page');
     }
 
     function _remap($param, $param2) {
@@ -31,7 +31,10 @@ class Page3 extends CI_Controller
 
     public function chart_data($unit)
     {
-        $data = $this->page->getChartData($unit);
+        $data['chart1'] = $this->page->getChartData($unit);
+        $data['chart2'] = $this->page->getPieArus($unit);
+        $data['chart3'] = $this->page->getPieTegangan($unit);
+        $data['chart4'] = $this->page->getPiePf($unit);
         echo json_encode($data);
     }
 }

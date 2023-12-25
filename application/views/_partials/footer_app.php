@@ -8,7 +8,7 @@
     <!-- Default to the left -->
     <span
         class="text-sm float-left"> <?= strtoupper($unit); ?> Building, loggedin as : <?= $user_data['user_name'] ?> —
-    <a href="<?= base_url('/home') ?>" class="href">home</a> | <a href="<?= base_url('/settings') ?>" class="href">settings</a> | <a href="<?= base_url('logout') ?>" class="href">log out</a>
+    <a href="<?= base_url('/home') ?>" class="href">home</a> | <a href="<?= base_url('/settings') ?>" class="href">settings</a> | <a href="<?= base_url('auth/logout') ?>" class="href">log out</a>
     </span>
     <span
         class="text-sm float-right" id="time"> ... </span>

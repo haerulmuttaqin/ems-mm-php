@@ -53,7 +53,7 @@ class Auth extends CI_Controller
                         $data['user_uiw'] = $up3['parent_sid'];
                         $data['user_up3'] = $up3['ref_sid'];
                     }*/
-                    $data['user_token'] = $this->getUserToken($data['user_sid'])['auth_token'];
+                    $data['user_token'] = $this->getUserToken($data['user_sid'])['auth_token'] || array();
                     if ($data['user_token'] == null) {
                         $token = $this->generateToken($data['user_sid']);
                         $data['user_token'] = $token;

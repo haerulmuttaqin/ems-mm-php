@@ -132,12 +132,12 @@ header .dropdown-off-sidebar {
   background: #EFEFF4 !important;
 }
 #sidebar:before {
-  border-right-width: "1px" !important;
+  border-right-width: 1px !important;
   border-right-style: solid;
   border-right-color: #c8c7cc !important;
 }
 #sidebar nav {
-  border-right-width: "1px" !important;
+  border-right-width: 1px !important;
   border-right-style: solid;
   border-right-color: #c8c7cc !important;
 }
@@ -307,19 +307,19 @@ header .dropdown-off-sidebar {
   }
 }
 
-.menu-header {
-    padding: 5px 15px;
-    background-size: cover;
-    color: white;
-    .name {
-      font-weight: bold;
-      margin-bottom: 3px;
-    }
-    .e-mail {
-      margin-top: 0;
-      margin-bottom: 5px;
-    }
-}
+/*.menu-header {*/
+/*    padding: 5px 15px;*/
+/*    background-size: cover;*/
+/*    color: white;*/
+/*    .name {*/
+/*      font-weight: bold;*/
+/*      margin-bottom: 3px;*/
+/*    }*/
+/*    .e-mail {*/
+/*      margin-top: 0;*/
+/*      margin-bottom: 5px;*/
+/*    }*/
+/*}*/
 
 .user-avatar {
     padding: .5em;

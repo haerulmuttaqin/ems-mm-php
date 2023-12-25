@@ -9,71 +9,152 @@ $(function () {
     const chartDom2 = document.getElementById("chart2");
     const myChart1 = echarts.init(chartDom1);
     const myChart2 = echarts.init(chartDom2);
-    let option, option2;
 
-    $.get(BASE_URL + 'show/page1/pie_data/mm', function (result) {
-
-        const data = JSON.parse(result)
-
-        option = {
-            title: {
-                left: 'center'
-            },
+    let option1;
+    let option2;
+    $.get(BASE_URL + "show/page7/chart_data/" + unit, function (result) {
+        const data = JSON.parse(result);
+        const pieData = data['used_ratio']
+        option1 = {
             tooltip: {
-                trigger: 'item'
+                trigger: "item",
+                formatter: "{a} <br/>{b}: {c} ({d}%)",
             },
             legend: {
-                orient: 'vertical',
-                bottom: 'bottom'
+                data: [],
+                show: false,
             },
             series: [
                 {
-                    name: 'Access From',
-                    type: 'pie',
-                    radius: '50%',
+                    name: "Rasio Daya Panel Lantai Per Bulan",
+                    type: "pie",
+                    radius: "50%",
+                    labelLine: {
+                        length: 30,
+                    },
+                    label: {
+                        formatter: "{a|{b}}{abg|}\n{hr|}\n  {c}  {per|{d}%}  ",
+                        backgroundColor: "#F6F8FC",
+                        borderColor: "#8C8D8E",
+                        borderWidth: 1,
+                        borderRadius: 4,
+                        rich: {
+                            a: {
+                                color: "#6E7079",
+                                lineHeight: 22,
+                                align: "center",
+                            },
+                            hr: {
+                                borderColor: "#8C8D8E",
+                                width: "100%",
+                                borderWidth: 1,
+                                height: 0,
+                            },
+                            b: {
+                                color: "#4C5058",
+                                fontSize: 14,
+                                fontWeight: "bold",
+                                lineHeight: 33,
+                            },
+                            per: {
+                                color: "#fff",
+                                backgroundColor: "#4C5058",
+                                padding: [3, 4],
+                                borderRadius: 4,
+                            },
+                        },
+                    },
                     data: [
-                        {value: 1048, name: 'PM LIFT'},
-                        {value: 735, name: 'PM\n' +
-                                'PENERANGAN'},
-                        {value: 580, name: 'PM AC/AHU'},
-                        {value: 1484, name: 'PM STOP\n' +
-                                'KONTAK'},
+                        {value: Math.round(pieData?.lift?.value), name: "PM LIFT"},
+                        {
+                            value: Math.round(pieData?.penerangan?.value),
+                            name: "PM PENERANGAN & STOP KONTAK",
+                        },
+                        {
+                            value: Math.round(pieData?.elektronik?.value),
+                            name: "PM ELEKTRONIK",
+                        },
+                        {
+                            value: Math.round(pieData?.tataudara?.value),
+                            name: "PM TATA UDARA",
+                        },
+                        {value: Math.round(pieData?.tataair?.value), name: "PM TATA AIR"},
                     ],
-                    emphasis: {
-                        itemStyle: {
-                            shadowBlur: 10,
-                            shadowOffsetX: 0,
-                            shadowColor: 'rgba(0, 0, 0, 0.5)'
-                        }
-                    }
-                }
-            ]
+                },
+            ],
         };
+        option1 && myChart1.setOption(option1);
 
 
+        const hours = [
+            "23:00",
+            "22:00",
+            "21:00",
+            "20:00",
+            "19:00",
+            "18:00",
+            "17:00",
+            "16:00",
+            "15:00",
+            "14:00",
+            "13:00",
+            "12:00",
+            "11:00",
+            "10:00",
+            "09:00",
+            "08:00",
+            "07:00",
+            "06:00",
+            "05:00",
+            "04:00",
+            "03:00",
+            "02:00",
+            "01:00",
+            "00:00",
+        ]
+        const lastDay = []
+        const toDay = []
+        hours.map((hour) => {
+            const itemLast = data['daily_ratio']['lastday'].find((it) => it['hour'] === hour)
+            const itemThis = data['daily_ratio']['today'].find((it) => it['hour'] === hour)
+            lastDay.push(itemLast || {date_time: hour, value: 0})
+            toDay.push(itemThis || {date_time: hour, value: 0})
+        })
         option2 = {
             xAxis: {
-                type: 'category',
-                data: ['12:00', '12:30', '11:00', '11:30', '10:00', '10:30', '12:00', '12:10', '11:20', '11:10', '10:10', '10:10', '09:10']
+                type: "category",
+                axisLabel: {
+                    interval: 0,
+                    rotate: 90
+                },
+                data: hours,
             },
             yAxis: {
-                type: 'value'
+                type: "value",
+            },
+            legend: {
+                show: true,
+                data: ['Last Day', 'Today']
             },
             series: [
                 {
-                    data: [120, 200, 150, 80, 70, 110, 130, 120, 200, 150, 80, 70, 110, 130],
-                    type: 'bar'
-                }
-            ]
+                    name: 'Last Day',
+                    data: lastDay,
+                    type: "bar",
+                },
+                {
+                    name: 'Today',
+                    data: toDay,
+                    type: "bar",
+                },
+            ],
         };
 
-
-        option && myChart1.setOption(option);
         option2 && myChart2.setOption(option2);
-    })
+    });
 
 
     setTimeout(() => {
         window.location.replace(BASE_URL + "show/page1/"+unit);
-    }, 5000);
+    }, 10000);
 });

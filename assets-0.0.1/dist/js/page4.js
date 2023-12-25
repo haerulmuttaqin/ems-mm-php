@@ -1,4 +1,4 @@
-import {BASE_URL, APP_VERSION, ticksStyle, showDialogError} from "./main.js";
+import {BASE_URL, APP_VERSION, ticksStyle, getDaysInMonth, getRandomColor} from "./main.js";
 
 $(function () {
     "use strict";
@@ -13,60 +13,36 @@ $(function () {
     const myChart2 = echarts.init(chartDom2);
     const myChart3 = echarts.init(chartDom3);
     const myChart4 = echarts.init(chartDom4);
-    let option;
-    let option2;
-    $.get(BASE_URL + 'show/page1/pie_data/mm', function (result) {
+    let option, option2, option3, option4;
+    $.get(BASE_URL + 'show/page4/chart_data/' + unit, function (result) {
 
         const data = JSON.parse(result)
-
+        const thisMonth = []
+        thisMonth.push(
+            ['amount', 'Tanggal'],
+        )
+        getDaysInMonth().map((day) => {
+            const itemThis = data['chart1'].find((it) => it['date_time'] === day)
+            thisMonth.push(itemThis ? [itemThis['value'] || 0, 'Tanggal ' + itemThis.date_time] : [0, 'Tanggal ' + day])
+        })
         option = {
             dataset: {
-                source: [
-                    ['score', 'amount', 'product'],
-                    [89.3, 58212, 'Lantai 1'],
-                    [57.1, 78254, 'Lantai 2'],
-                    [74.4, 41032, 'Lantai 3'],
-                    [50.1, 12755, 'Lantai 4'],
-                    [89.7, 20145, 'Lantai 5'],
-                    [68.1, 79146, 'Lantai 6'],
-                    [19.6, 91852, 'Lantai 7'],
-                    [10.6, 102852, 'Lantai 8'],
-                    [10.6, 101352, 'Lantai 9'],
-                    [10.6, 104852, 'Lantai 10'],
-                    [10.6, 101752, 'Lantai 11'],
-                    [10.6, 11852, 'Lantai 12'],
-                    [10.6, 101852, 'Lantai 13'],
-                    [10.6, 12852, 'Lantai 14'],
-                    [10.6, 106852, 'Lantai 15'],
-                    [10.6, 21852, 'Lantai 16'],
-                    [10.6, 51852, 'Lantai 17'],
-                    [10.6, 71852, 'Lantai 18'],
-                    [10.6, 10159, 'Lantai 19'],
-                ]
+                source: thisMonth
             },
             grid: { containLabel: true },
             xAxis: { name: 'amount' },
             yAxis: { type: 'category' },
-            visualMap: {
-                orient: 'horizontal',
-                left: 'center',
-                // min: 10,
-                // max: 1000,
-                text: ['High Score', 'Low Score'],
-                // Map the score column to color
-                dimension: 0,
-                inRange: {
-                    color: ['#65B581', '#3485ff', '#2615b9', '#FD665F', '#5fd8fd', '#65B581', '#3485ff', '#2615b9', '#FD665F', '#5fd8fd']
-                }
-            },
             series: [
                 {
                     type: 'bar',
+                    itemStyle: {
+                        color: function (param) {
+                            return getRandomColor() || '#5470c6';
+                        }
+                    },
                     encode: {
-                        // Map the "amount" column to X axis.
                         x: 'amount',
-                        // Map the "product" column to Y axis
-                        y: 'product'
+                        y: 'Tanggal'
                     }
                 }
             ]
@@ -74,7 +50,10 @@ $(function () {
 
         option && myChart1.setOption(option);
 
-
+        const pieData2 = []
+        data['chart2'].map((item) => {
+            pieData2.push({value: Math.round(item.value) || 0, name: item.caption})
+        })
         option2 = {
             title: {
                 left: 'center'
@@ -82,39 +61,101 @@ $(function () {
             tooltip: {
                 trigger: 'item'
             },
-            legend: {
-                orient: 'vertical',
-                bottom: 'bottom'
-            },
             series: [
                 {
-                    name: 'Access From',
+                    name: 'DAYA KERJA',
                     type: 'pie',
                     radius: '50%',
-                    data: [
-                        { value: 1048, name: 'Lantai 1' },
-                        { value: 735, name: 'Lantai 2' },
-                        { value: 580, name: 'Lantai 3' },
-                        { value: 484, name: 'Lantai 4' },
-                        { value: 300, name: 'Lantai 5' }
-                    ],
+                    data: pieData2,
                     emphasis: {
                         itemStyle: {
                             shadowBlur: 10,
                             shadowOffsetX: 0,
                             shadowColor: 'rgba(0, 0, 0, 0.5)'
                         }
-                    }
+                    },
+                    itemStyle: {
+                        color: function (param) {
+                            return getRandomColor() || '#5470c6';
+                        }
+                    },
                 }
             ]
         };
         option2 && myChart2.setOption(option2);
-        option2 && myChart3.setOption(option2);
-        option2 && myChart4.setOption(option2);
+
+
+        const pieData3 = []
+        data['chart3'].map((item) => {
+            pieData3.push({value: Math.round(item.value) || 0, name: item.caption})
+        })
+        option3 = {
+            title: {
+                left: 'center'
+            },
+            tooltip: {
+                trigger: 'item'
+            },
+            series: [
+                {
+                    name: 'DAYA LIFT',
+                    type: 'pie',
+                    radius: '50%',
+                    data: pieData3,
+                    emphasis: {
+                        itemStyle: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    },
+                    itemStyle: {
+                        color: function (param) {
+                            return getRandomColor() || '#5470c6';
+                        }
+                    },
+                }
+            ]
+        };
+        option3 && myChart3.setOption(option3);
+
+        const pieData4 = []
+        data['chart4'].map((item) => {
+            pieData4.push({value: Math.round(item.value) || 0, name: item.caption})
+        })
+        option4 = {
+            title: {
+                left: 'center'
+            },
+            tooltip: {
+                trigger: 'item'
+            },
+            series: [
+                {
+                    name: 'DAYA LIGHTING',
+                    type: 'pie',
+                    radius: '50%',
+                    data: pieData4,
+                    emphasis: {
+                        itemStyle: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    },
+                    itemStyle: {
+                        color: function (param) {
+                            return getRandomColor() || '#5470c6';
+                        }
+                    },
+                }
+            ]
+        };
+        option4 && myChart4.setOption(option4);
     })
 
 
     setTimeout(() => {
         window.location.replace(BASE_URL + "show/page5/"+unit);
-    }, 5000);
+    }, 10000);
 });

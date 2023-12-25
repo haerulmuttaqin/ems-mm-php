@@ -1,4 +1,4 @@
-import {BASE_URL, APP_VERSION, ticksStyle, showDialogError} from "./main.js";
+import {BASE_URL, APP_VERSION, ticksStyle, getRandomColor} from "./main.js";
 
 $(function () {
     "use strict";
@@ -14,50 +14,40 @@ $(function () {
     const myChart2 = echarts.init(chartDom2);
     const myChart3 = echarts.init(chartDom3);
     const myChart4 = echarts.init(chartDom4);
-    let option;
-    let option2;
-    $.get(BASE_URL + 'show/page1/pie_data/mm', function (result) {
+    let option, option2, option3, option4;
+    $.get(BASE_URL + 'show/page3/chart_data/' + unit, function (result) {
 
         const data = JSON.parse(result)
+        const floorData = []
+        floorData.push(['amount', 'Lantai'])
+        data['chart1'].map((item) => {
+            floorData.push([Math.round(item.value) || 0, item.caption])
+        })
 
         option = {
             dataset: {
-                source: [
-                    ['score', 'amount', 'product'],
-                    [89.3, 58212, 'Lantai 1'],
-                    [57.1, 78254, 'Lantai 2'],
-                    [74.4, 41032, 'Lantai 3'],
-                    [50.1, 12755, 'Lantai 4'],
-                    [89.7, 20145, 'Lantai 5'],
-                    [68.1, 79146, 'Lantai 6'],
-                    [19.6, 91852, 'Lantai 7'],
-                    [10.6, 101852, 'Lantai 8'],
-                ]
+                source: floorData
+            },
+            legend: {
+                show: true
             },
             grid: { containLabel: true },
-            xAxis: { name: 'amount' },
+            xAxis: { name: 'Beban' },
             yAxis: { type: 'category' },
-            visualMap: {
-                orient: 'horizontal',
-                left: 'center',
-                min: 10,
-                max: 100,
-                text: ['High Score', 'Low Score'],
-                // Map the score column to color
-                dimension: 0,
-                inRange: {
-                    color: ['#65B581', '#FFCE34', '#FD665F']
-                }
-            },
             series: [
                 {
+                    itemStyle: {
+                        color: function (param) {
+                            return getRandomColor() || '#5470c6';
+                        }
+                    },
                     type: 'bar',
                     encode: {
                         // Map the "amount" column to X axis.
                         x: 'amount',
                         // Map the "product" column to Y axis
-                        y: 'product'
-                    }
+                        y: 'Lantai'
+                    },
                 }
             ]
         };
@@ -65,6 +55,10 @@ $(function () {
         option && myChart1.setOption(option);
 
 
+        const floorData2 = []
+        data['chart2'].map((item) => {
+            floorData2.push({value: Math.round(item.value) || 0, name: item.caption})
+        })
         option2 = {
             title: {
                 left: 'center'
@@ -72,22 +66,17 @@ $(function () {
             tooltip: {
                 trigger: 'item'
             },
-            legend: {
-                orient: 'vertical',
-                bottom: 'bottom'
-            },
             series: [
                 {
-                    name: 'Access From',
+                    name: 'ARUS',
                     type: 'pie',
                     radius: '50%',
-                    data: [
-                        { value: 1048, name: 'Lantai 1' },
-                        { value: 735, name: 'Lantai 2' },
-                        { value: 580, name: 'Lantai 3' },
-                        { value: 484, name: 'Lantai 4' },
-                        { value: 300, name: 'Lantai 5' }
-                    ],
+                    data: floorData2,
+                    itemStyle: {
+                        color: function (param) {
+                            return getRandomColor() || '#5470c6';
+                        }
+                    },
                     emphasis: {
                         itemStyle: {
                             shadowBlur: 10,
@@ -99,8 +88,74 @@ $(function () {
             ]
         };
         option2 && myChart2.setOption(option2);
-        option2 && myChart3.setOption(option2);
-        option2 && myChart4.setOption(option2);
+
+        const floorData3 = []
+        data['chart3'].map((item) => {
+            floorData3.push({value: Math.round(item.value) || 0, name: item.caption})
+        })
+        option3 = {
+            title: {
+                left: 'center'
+            },
+            tooltip: {
+                trigger: 'item'
+            },
+            series: [
+                {
+                    name: 'TEGANGAN',
+                    type: 'pie',
+                    radius: '50%',
+                    data: floorData3,
+                    itemStyle: {
+                        color: function (param) {
+                            return getRandomColor() || '#5470c6';
+                        }
+                    },
+                    emphasis: {
+                        itemStyle: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    }
+                }
+            ]
+        };
+        option3 && myChart3.setOption(option3);
+
+        const floorData4 = []
+        data['chart4'].map((item) => {
+            floorData4.push({value: Math.round(item.value) || 0, name: item.caption})
+        })
+        option4 = {
+            title: {
+                left: 'center'
+            },
+            tooltip: {
+                trigger: 'item'
+            },
+            series: [
+                {
+                    name: 'POWER FACTOR',
+                    type: 'pie',
+                    radius: '50%',
+                    data: floorData4,
+                    itemStyle: {
+                        color: function (param) {
+                            return getRandomColor() || '#5470c6';
+                        }
+                    },
+                    emphasis: {
+                        itemStyle: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    }
+                }
+            ]
+        };
+        option4 && myChart4.setOption(option4);
     })
 
 

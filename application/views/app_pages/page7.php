@@ -11,46 +11,29 @@
         <div class="col-lg-6">
             <div class="card card-primary">
                 <div class="card-body">
-                    <h4 class="text-bold text-center">PENGUKURAN PEMAKAIAN DAYA</h4>
+                    <h4 class="text-bold text-center">TABEL PENGUKURAN DAYA</h4>
                     <table class="table" style="height: 100%;">
                         <thead class="thead-dark">
                         <tr>
-                            <th scope="col">PEMAKAIAN</th>
-                            <th scope="col">TEGANGAN</th>
-                            <th scope="col">ARUS RATA RATA</th>
-                            <th scope="col">DAYA AKTIF</th>
-                            <th scope="col">POWER FACTOR</th>
+                            <th scope="col" style="width: 16%; vertical-align: middle;">MEASUREMENT</th>
+                            <th scope="col" style="width: 16%; vertical-align: middle;">PM LIFT</th>
+                            <th scope="col" style="width: 20%; vertical-align: middle;">PM PENERANGAN & STOP KONTAK</th>
+                            <th scope="col" style="width: 16%; vertical-align: middle;">PM ELEKTRONIK</th>
+                            <th scope="col" style="width: 16%; vertical-align: middle;">PM TATA UDARA</th>
+                            <th scope="col" style="width: 16%; vertical-align: middle;">PM TATA AIR</th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <th>LIFT</th>
-                            <th>0</th>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <th>PENERANGAN</th>
-                            <th>0</th>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <th>AC</th>
-                            <th>0</th>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <th>STOP KONTAK</th>
-                            <th>0</th>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
+                        <?php foreach ($data as $item) : ?>
+                            <tr>
+                                <th><?= $item['caption'] ?></th>
+                                <td><?= $item['value_lift'] ?></td>
+                                <td><?= $item['value_penerangan'] ?></td>
+                                <td><?= $item['value_elektronik'] ?></td>
+                                <td><?= $item['value_udara'] ?></td>
+                                <td><?= $item['value_air'] ?></td>
+                            </tr>
+                        <?php endforeach; ?>
                         </tbody>
                     </table>
 

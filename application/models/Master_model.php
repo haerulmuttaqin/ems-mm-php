@@ -3,10 +3,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Master_model extends CI_Model
 {
-    public function getMapper()
+    public function getMapper($unit)
     {
         $this->db->select('*');
-        $this->db->from('meter_mapper');
+        $this->db->from('meter_mapper_'.$unit);
         return $this->db->get()->result_array();
     }
 

@@ -11,30 +11,30 @@
         <div class="col-lg-6">
             <div class="card card-primary">
                 <div class="card-body">
-                    <h4 class="text-bold text-center">PENGUKURAN DAYA LANTAI</h4>
+                    <h4 class="text-bold text-center">TABEL PENGUKURAN DAYA LANTAI</h4>
                     <table class="table" style="height: 100%;">
                         <thead class="thead-dark">
-                            <tr>
-                                <th scope="col">MEASUREMENT</th>
-                                <th scope="col">PM LIFT</th>
-                                <th scope="col">PM PENERANGAN DAN STOP KONTAK </th>
-                                <th scope="col">PM ELEKTRONIK</th>
-                                <th scope="col">PM TATA UDARA</th>
-                                <th scope="col">PM TATA AIR</th>
-                            </tr>
+                        <tr>
+                            <th scope="col" style="width: 16%; vertical-align: middle;">MEASUREMENT</th>
+                            <th scope="col" style="width: 16%; vertical-align: middle;">PM LIFT</th>
+                            <th scope="col" style="width: 20%; vertical-align: middle;">PM PENERANGAN & STOP KONTAK</th>
+                            <th scope="col" style="width: 16%; vertical-align: middle;">PM ELEKTRONIK</th>
+                            <th scope="col" style="width: 16%; vertical-align: middle;">PM TATA UDARA</th>
+                            <th scope="col" style="width: 16%; vertical-align: middle;">PM TATA AIR</th>
+                        </tr>
                         </thead>
-                        <?php foreach ($data as $item) : ?>
                         <tbody>
+                        <?php foreach ($data as $item) : ?>
                             <tr>
                                 <th><?= $item['caption'] ?></th>
-                                <th><?= $item['value_lift'] ?></th>
+                                <td><?= $item['value_lift'] ?></td>
                                 <td><?= $item['value_penerangan'] ?></td>
                                 <td><?= $item['value_elektronik'] ?></td>
                                 <td><?= $item['value_udara'] ?></td>
                                 <td><?= $item['value_air'] ?></td>
                             </tr>
-                        </tbody>
                         <?php endforeach; ?>
+                        </tbody>
                     </table>
 
                 </div>

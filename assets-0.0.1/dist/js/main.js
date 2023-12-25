@@ -57,6 +57,19 @@ function generateSid() {
     });
 }
 let dataTableExecTime;
+
+function getDaysInMonth() {
+    const date = new Date();
+    const month = date.getMonth();
+    date.setDate(1);
+    const allDays = [];
+    while (date.getMonth() === month) {
+        const d = date.getDate().toString().padStart(2, '0');
+        allDays.push(d);
+        date.setDate(date.getDate() + 1);
+    }
+    return allDays
+}
 function reverseDate(db) {
     let d = new Date(db.split("/").reverse().join("-"));
     let dd = d.getDate();
@@ -230,6 +243,16 @@ function toTitleCase(str) {
         }
     );
 }
+
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
 export {
     BASE_URL,
     APP_VERSION,
@@ -258,7 +281,9 @@ export {
     Toast,
     showDialogSuccess,
     formatRupiah,
-    toTitleCase
+    toTitleCase,
+    getDaysInMonth,
+    getRandomColor
 }
 
 

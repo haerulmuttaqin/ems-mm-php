@@ -11,7 +11,7 @@
                                         <b class="text-bold float-left flex">
                                             <?= $item['ref_description'] ?>
                                         </b>
-                                        <a href="<?= base_url("show/page1/a1") ?>" target="_blank"
+                                        <a href="<?= base_url("show/page1/"  . strtolower($item['ref_name'])) ?>" target="_blank"
                                            role="button" type="submit" class="flex btn btn-success float-right">
                                             <i class="fas fa-caret-square-right mr-2"></i> Show
                                         </a>
@@ -26,7 +26,7 @@
                                     <b class="text-bold float-left flex">
                                         <?= $item['ref_description'] ?>
                                     </b>
-                                    <a href="<?= base_url("show/page1/mm") ?>" target="_blank"
+                                    <a href="<?= base_url("show/page1/" . strtolower($item['ref_name'])) ?>" target="_blank"
                                        role="button" type="submit" class="flex btn btn-success float-right">
                                         <i class="fas fa-caret-square-right mr-2"></i> Show
                                     </a>

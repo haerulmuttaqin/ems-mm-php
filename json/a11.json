@@ -1,0 +1,5138 @@
+[
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T17:24:00",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151057255"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.9"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.3"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95881766"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.1"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:24:00",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151052100"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.2"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95878782"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.7"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:16:55",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151051458"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95878407"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.4"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:16:30",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151051426"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95878388"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.5"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:16:10",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151051393"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.2"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.4"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95878369"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.5"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:15:45",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151051360"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.6"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.3"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95878349"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:15:20",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151051329"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.4"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95878330"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.2"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:15:00",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151051296"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95878311"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.3"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:14:35",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151051263"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.4"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95878292"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.3"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:14:15",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151051229"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.4"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95878272"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:13:50",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151051194"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95878251"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.6"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:13:35",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151051171"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95878239"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.2"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:13:20",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151051150"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.2"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95878226"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.2"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:13:05",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151051128"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95878213"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.2"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:12:40",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151051094"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.2"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95878192"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.4"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:12:25",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151051071"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95878180"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.6"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:12:10",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151051050"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.7"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95878166"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.3"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.8"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:11:45",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151051014"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95878146"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.3"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:11:30",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151050993"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.2"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95878133"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.9"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:11:15",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151050971"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95878121"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.4"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:10:50",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151050937"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.4"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95878099"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.3"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.1"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:10:35",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151050914"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95878087"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.6"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:10:20",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151050893"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95878073"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.6"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:03:45",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151050331"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877741"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.6"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:03:30",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151050309"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877728"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.7"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:03:05",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151050274"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877707"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.9"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:02:40",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151050239"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.2"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877686"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.9"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:02:25",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151050222"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.8"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877676"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.3"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.3"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:02:05",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151050187"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877656"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.9"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:01:40",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151050151"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.9"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.3"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.8"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877635"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.3"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.6"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:01:25",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151050130"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.9"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.3"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877622"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.3"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:01:10",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151050108"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.9"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.3"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877610"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.1"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:00:45",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151050071"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.9"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.3"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.7"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877589"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.3"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.3"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:00:30",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151050049"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.9"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.3"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877576"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.6"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T16:00:15",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151050027"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.9"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.3"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877563"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.7"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:59:50",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151049990"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.9"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.3"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877542"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.8"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:59:35",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151049968"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "9"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.4"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3.1"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877529"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.8"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:59:20",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151049946"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.9"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.3"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877517"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.9"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:59:05",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151049923"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.6"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877504"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.8"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:58:40",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151049887"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.6"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877483"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:58:25",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151049868"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.6"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877470"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:58:10",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151049845"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.6"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.7"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877457"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:57:45",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151049810"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.6"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877436"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.3"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:57:30",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151049791"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877425"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.3"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.2"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:57:15",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151049774"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.6"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877415"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.4"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:56:55",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151049740"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.2"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.4"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877394"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.1"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:56:30",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151049705"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877374"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.7"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:56:05",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151049671"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.4"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877355"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:55:45",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151049638"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877335"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:55:30",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151049618"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877323"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.3"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.1"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:55:15",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151049595"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.2"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877310"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:54:50",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151049561"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877289"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.4"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:54:35",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151049541"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877278"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.2"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:54:15",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151049510"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.6"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877259"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.6"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:53:50",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151049477"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.6"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.3"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877241"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.7"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:53:25",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151049444"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.6"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877220"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.3"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:53:05",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151049411"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.4"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "95877201"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.3"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:52:30",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151049365"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.2"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.3"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:52:10",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151049334"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.3"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.5"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:51:45",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151049304"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.2"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.2"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:51:25",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151049274"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.3"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.3"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:51:05",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151049242"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.4"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.3"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:50:45",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151049212"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.2"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.4"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:50:10",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151049162"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.2"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.4"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.3"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:49:55",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "151049147"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.8"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.2"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.2"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:46:05",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.3"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:45:40",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.5"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:45:20",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.4"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.3"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:45:00",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.6"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.4"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.7"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:44:25",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.2"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.4"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.9"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:44:05",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.2"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.7"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:43:45",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.4"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.8"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:43:35",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.9"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:43:15",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.2"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.7"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.5"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:43:05",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.2"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.3"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:42:50",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.2"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.8"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:42:35",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.2"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:42:15",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.2"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.2"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:42:00",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.2"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3.1"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.7"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.9"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:41:45",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.6"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:41:30",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.2"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3.1"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.7"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:40:55",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "9"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.4"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "0"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "0"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.4"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:40:40",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.9"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.3"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3.1"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.7"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "0"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "0"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.9"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:40:25",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "9"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.4"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3.1"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "0"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "0"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.6"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:40:15",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "9"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.4"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "0"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "0"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.4"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:40:05",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.9"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.4"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "0"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "0"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.6"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:39:55",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.9"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.3"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.7"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "0"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "0"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.7"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:39:45",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.9"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.3"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "0"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "0"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.6"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:39:35",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.9"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.4"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "0"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "0"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:39:25",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.9"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.4"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3.1"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.7"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "0"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "0"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.8"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:39:15",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "9"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.4"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "0"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "0"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.7"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:39:05",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.9"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.3"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3.1"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "0"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "0"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.7"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:38:55",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.9"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.3"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "0"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "0"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.9"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:38:40",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.9"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.3"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3.1"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "0"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "0"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.4"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:38:25",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3.1"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "0"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "0"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.1"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:38:15",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "0"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "0"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "42.1"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:38:00",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.2"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "0"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "0"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "41.8"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:37:35",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.2"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "0"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "0"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "0"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:37:25",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.2"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "0"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "0"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "0"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T15:37:15",
+        "IdDevice": 119,
+        "DeviceDescription": "A1 - Elektronik",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "8.7"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "5.2"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "397.6"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "0"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "0"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "0"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T17:24:00",
+        "IdDevice": 122,
+        "DeviceDescription": "A1 - LP1 - LT1",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "337417108"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "12.5"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "8.3"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "1"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "399.2"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "80091800"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.5"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "19.5"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T17:24:00",
+        "IdDevice": 123,
+        "DeviceDescription": "A1 - LP2 - LT2",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "92947620"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "2.1"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "0.7"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-1.3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "399.9"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50.1"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.5"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "45856058"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.5"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "54.8"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T17:24:00",
+        "IdDevice": 124,
+        "DeviceDescription": "A1 - LP3 - LT3",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "127659901"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "3.2"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "1.5"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-1.5"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "399.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50.1"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.3"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "48294324"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.1"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "37.1"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T17:24:00",
+        "IdDevice": 131,
+        "DeviceDescription": "A1 - PP-Comp2 - LT2",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "7359596"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "0.4"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "0.1"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-0.3"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "0"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50.1"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.7"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "12374981"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "0"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "32.8"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T17:24:00",
+        "IdDevice": 132,
+        "DeviceDescription": "A1 - PP-Comp3 - LT3",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "353681"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "0"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "0"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "0"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "0"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50.1"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.8"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "740375"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "0"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "37"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T17:24:00",
+        "IdDevice": 133,
+        "DeviceDescription": "A1 - PP-Comp4 - LT4",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "226522675"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "2.9"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "0.8"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "-1.7"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "399.5"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "50.1"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "1.6"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "76129398"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "1.4"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "53.1"
+            }
+        }
+    },
+    {
+        "IdDataLog": 59,
+        "TimeStamp": "2023-12-17T17:24:00",
+        "IdDevice": 136,
+        "DeviceDescription": "A1 - Plumbing ",
+        "MeasureList": {
+            "M1000024": {
+                "Description": "kWH +",
+                "Value": "0"
+            },
+            "M1000008": {
+                "Description": "I-AVG",
+                "Value": "0"
+            },
+            "M1000015": {
+                "Description": "Eqv kW",
+                "Value": "0"
+            },
+            "M1000016": {
+                "Description": "Eqv kVAR",
+                "Value": "0"
+            },
+            "M1000012": {
+                "Description": "Eqv VL-L",
+                "Value": "0"
+            },
+            "M1000023": {
+                "Description": "Hz",
+                "Value": "0"
+            },
+            "M1000014": {
+                "Description": "PF-TOT",
+                "Value": "0"
+            },
+            "M1000025": {
+                "Description": "kVARH +",
+                "Value": "0"
+            },
+            "M1000022": {
+                "Description": "THDV",
+                "Value": "0"
+            },
+            "M1000021": {
+                "Description": "THDI",
+                "Value": "35.2"
+            }
+        }
+    }
+]
