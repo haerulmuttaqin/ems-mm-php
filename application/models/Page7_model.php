@@ -84,18 +84,33 @@ LIMIT
     {
         $table_name = 'meter_record_' . $unit;
         $data = array();
-        $data['today'] = $this->db->query("
-                            SELECT date_time, concat(date_format(date_time, '%h'), ':00')  as hour, kw_eqv as value from $table_name
-                            where device in ('LVMDP C1', 'LVMDP C2', 'LVMDP 28') and cast(date_time as DATE) = curdate()  
-                            group by date_format(date_time, '%h');
-                            ")->result_array();
+        if ($unit == 'mm') {
 
-        $data['lastday'] = $this->db->query("
-                            SELECT date_time, concat(date_format(date_time, '%h'), ':00')  as hour, kw_eqv as value from $table_name
-                            where device in ('LVMDP C1', 'LVMDP C2', 'LVMDP 28') and cast(date_time as DATE) = (curdate() - interval 1 day)
-                            group by date_format(date_time, '%h');
-                            ")->result_array();
+            $data['today'] = $this->db->query("
+                SELECT date_time, concat(date_format(date_time, '%H'), ':00')  as hour, kw_eqv as value from $table_name
+                where device in ('LVMDP C1', 'LVMDP C2', 'LVMDP 28') and cast(date_time as DATE) = curdate()  
+                group by date_format(date_time, '%H');
+                ")->result_array();
 
+            $data['lastday'] = $this->db->query("
+                SELECT date_time, concat(date_format(date_time, '%H'), ':00')  as hour, kw_eqv as value from $table_name
+                where device in ('LVMDP C1', 'LVMDP C2', 'LVMDP 28') and cast(date_time as DATE) = (curdate() - interval 1 day)
+                group by date_format(date_time, '%H');
+                ")->result_array();
+        } else {
+
+            $data['today'] = $this->db->query("
+                SELECT date_time, concat(date_format(date_time, '%H'), ':00')  as hour, kw_eqv as value from $table_name
+                where cast(date_time as DATE) = curdate()  
+                group by date_format(date_time, '%H');
+                ")->result_array();
+
+            $data['lastday'] = $this->db->query("
+                SELECT date_time, concat(date_format(date_time, '%H'), ':00')  as hour, kw_eqv as value from $table_name
+                where cast(date_time as DATE) = (curdate() - interval 1 day)
+                group by date_format(date_time, '%H');
+                ")->result_array();
+        }
         return $data;
     }
 

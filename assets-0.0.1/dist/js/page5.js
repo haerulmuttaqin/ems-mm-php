@@ -22,7 +22,7 @@ $(function () {
 
         const pieData1 = []
         data['chart1'].map((item) => {
-            pieData1.push({value: Math.round(item.value) || 0, name: item.caption})
+            pieData1.push({value: Number(item.value).toFixed(2) || 0, name: item.caption})
         })
         option1 = {
             tooltip: {
@@ -86,7 +86,7 @@ $(function () {
 
         const pieData2 = []
         data['chart2'].map((item) => {
-            pieData2.push({value: Math.round(item.value) || 0, name: item.caption})
+            pieData2.push({value: Number(item.value).toFixed(2) || 0, name: item.caption})
         })
         option2 = {
             tooltip: {
@@ -156,6 +156,10 @@ $(function () {
         };
         option2 && myChart2.setOption(option2);
 
+        const pieData3 = []
+        data['chart3'].map((item) => {
+            pieData3.push({value: Number(item.value).toFixed(2) || 0, name: item.caption})
+        })
         option3 = {
             tooltip: {
                 trigger: "item",
@@ -206,12 +210,7 @@ $(function () {
                         },
                     },
 
-                    data: [
-                        {value: 1048, name: "LIFT A (LIFT - LT15)"},
-                        {value: 7235, name: "LIFT B (LIFT - LT28)"},
-                        {value: 3300, name: "LIFT C (LIFT - LT4)"},
-
-                    ],
+                    data: pieData3,
                     emphasis: {
                         itemStyle: {
                             shadowBlur: 10,
@@ -233,5 +232,5 @@ $(function () {
 
     setTimeout(() => {
         window.location.replace(BASE_URL + "show/page6/"+unit);
-    }, 10000);
+    }, 15000);
 });

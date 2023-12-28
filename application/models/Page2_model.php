@@ -8,8 +8,7 @@ class Page2_model extends CI_Model
         $table_name = 'meter_record_'.$unit;
         $data = array();
         $data['chart1_this_week'] = $this->db->query("
-                select 
-                    (case
+                select (case
                         when date_format(summary.date_time,'%w') = 0 THEN 'Minggu'
                         when date_format(summary.date_time,'%w') = 1 THEN 'Senin'
                         when date_format(summary.date_time,'%w') = 2 THEN 'Selasa'
@@ -18,97 +17,101 @@ class Page2_model extends CI_Model
                         when date_format(summary.date_time,'%w') = 5 THEN 'Jum`at'
                         when date_format(summary.date_time,'%w') = 6 THEN 'Sabtu'
                         end) as date_time, 
-                    avg(summary.value) as value 
+                       round(sum(value), 1) as value
                 from (
-                    SELECT device_id, device, date_time, sum(kw_eqv) as value from $table_name
-                        where device in ('LVMDP C1', 'LVMDP C2', 'LVMDP 28')
-                        group by CAST(date_time AS DATE), device
-                    ) as summary
-                where cast(date_time as DATE) BETWEEN (SELECT DATE_ADD(CURDATE(), INTERVAL - WEEKDAY(CURDATE()) DAY)) and NOW() - INTERVAL 1 DAY
-                group by cast(summary.date_time as DATE)
+                    select date_time, device, avg(kw_eqv) as value from meter_record_mm
+                    where device like 'LVMDP %'
+                    and cast(date_time as DATE) BETWEEN (SELECT DATE_ADD(CURDATE(), INTERVAL - WEEKDAY(CURDATE()) DAY)) and NOW() - INTERVAL 1 day
+                    group by cast(date_time as DATE), device 
+                ) as summary group by cast(date_time as DATE)
         ")->result_array();
 
         $data['chart1_last_week'] = $this->db->query("
-select 
-    (case
-            when date_format(summary.date_time,'%w') = 0 THEN 'Minggu'
-            when date_format(summary.date_time,'%w') = 1 THEN 'Senin'
-            when date_format(summary.date_time,'%w') = 2 THEN 'Selasa'
-            when date_format(summary.date_time,'%w') = 3 THEN 'Rabu'
-            when date_format(summary.date_time,'%w') = 4 THEN 'Kamis'
-            when date_format(summary.date_time,'%w') = 5 THEN 'Jum`at'
-            when date_format(summary.date_time,'%w') = 6 THEN 'Sabtu'
-            end) as date_time,
-    avg(summary.value) as value 
-    from (
-    SELECT device_id, device, date_time, sum(kw_eqv) as value from $table_name
-        where device in ('LVMDP C1', 'LVMDP C2', 'LVMDP 28')
-        group by CAST(date_time AS DATE), device
-    ) as summary
-where cast(date_time as DATE) BETWEEN (SELECT DATE_ADD(DATE_ADD(CURDATE(), INTERVAL - WEEKDAY(CURDATE()) DAY), INTERVAL - 1 WEEK)) 
-and (SELECT DATE_ADD(DATE_ADD(CURDATE(), INTERVAL - WEEKDAY(CURDATE()) DAY), INTERVAL - 1 DAY)) 
-group by cast(summary.date_time as DATE)
+                select (case
+                        when date_format(summary.date_time,'%w') = 0 THEN 'Minggu'
+                        when date_format(summary.date_time,'%w') = 1 THEN 'Senin'
+                        when date_format(summary.date_time,'%w') = 2 THEN 'Selasa'
+                        when date_format(summary.date_time,'%w') = 3 THEN 'Rabu'
+                        when date_format(summary.date_time,'%w') = 4 THEN 'Kamis'
+                        when date_format(summary.date_time,'%w') = 5 THEN 'Jum`at'
+                        when date_format(summary.date_time,'%w') = 6 THEN 'Sabtu'
+                        end) as date_time, 
+                       round(sum(value), 1) as value
+                from (
+                    select date_time, device, avg(kw_eqv) as value from meter_record_mm
+                    where device like 'LVMDP %'
+                    and cast(date_time as DATE) BETWEEN (SELECT DATE_ADD(DATE_ADD(CURDATE(), INTERVAL - WEEKDAY(CURDATE()) DAY), INTERVAL - 1 WEEK)) 
+                    and (SELECT DATE_ADD(DATE_ADD(CURDATE(), INTERVAL - WEEKDAY(CURDATE()) DAY), INTERVAL - 1 DAY))
+                    group by cast(date_time as DATE), device 
+                ) as summary group by cast(date_time as DATE)
         ")->result_array();
 
 
         $data['chart2_last_month'] = $this->db->query("
-select date_format(summary.date_time, '%d') date_time, avg(summary.value) as value from (
-SELECT device_id, device, date_time, sum(kw_eqv) as value from $table_name
-	where device in ('LVMDP C1', 'LVMDP C2', 'LVMDP 28')
-	group by CAST(date_time AS DATE), device
-) as summary
-where cast(date_time as DATE) BETWEEN (DATE_SUB(LAST_DAY(DATE_ADD(NOW(), INTERVAL -1 MONTH)),INTERVAL DAY(LAST_DAY(DATE_ADD(NOW(), INTERVAL -1 MONTH)))-1 DAY)) 
-and (LAST_DAY(DATE_ADD(NOW(), INTERVAL -1 MONTH))) 
-group by cast(summary.date_time as DATE)
+                select date_format(summary.date_time, '%d') as date_time, round(sum(value), 1) as value
+                from (
+                        select date_time, device, avg(kw_eqv) as value from meter_record_mm
+                        where device like 'LVMDP %'
+                        and cast(date_time as DATE) BETWEEN (DATE_SUB(LAST_DAY(DATE_ADD(NOW(), INTERVAL -1 MONTH)),INTERVAL DAY(LAST_DAY(DATE_ADD(NOW(), INTERVAL -1 MONTH)))-1 DAY)) 
+                        and (LAST_DAY(DATE_ADD(NOW(), INTERVAL -1 MONTH))) 
+                        group by cast(date_time as DATE), device 
+                    ) as summary
+                group by cast(summary.date_time as DATE)
         ")->result_array();
 
         $data['chart2_this_month'] = $this->db->query("
-select date_format(summary.date_time, '%d') date_time, avg(summary.value) as value from (
-SELECT device_id, device, date_time, sum(kw_eqv) as value from $table_name
-	where device in ('LVMDP C1', 'LVMDP C2', 'LVMDP 28')
-	group by CAST(date_time AS DATE), device
-) as summary
-where cast(date_time as DATE) BETWEEN (DATE_ADD(LAST_DAY(DATE_ADD(NOW(), INTERVAL -1 MONTH)), INTERVAL 1 DAY)) and NOW() - INTERVAL 1 DAY
-group by cast(summary.date_time as DATE)
+                select date_format(summary.date_time, '%d') as date_time, round(sum(value), 1) as value
+                from (
+                        select date_time, device, avg(kw_eqv) as value from meter_record_mm
+                        where device like 'LVMDP %'
+                        and cast(date_time as DATE) BETWEEN (DATE_ADD(LAST_DAY(DATE_ADD(NOW(), INTERVAL -1 MONTH)), INTERVAL 1 DAY)) and NOW() - INTERVAL 1 DAY
+                        group by cast(date_time as DATE), device 
+                    ) as summary
+                group by cast(summary.date_time as DATE)
         ")->result_array();
 
         $data['chart3_last_7days'] = $this->db->query("
-select 
-    (case
-            when date_format(summary.date_time,'%w') = 0 THEN 'Minggu'
-            when date_format(summary.date_time,'%w') = 1 THEN 'Senin'
-            when date_format(summary.date_time,'%w') = 2 THEN 'Selasa'
-            when date_format(summary.date_time,'%w') = 3 THEN 'Rabu'
-            when date_format(summary.date_time,'%w') = 4 THEN 'Kamis'
-            when date_format(summary.date_time,'%w') = 5 THEN 'Jum`at'
-            when date_format(summary.date_time,'%w') = 6 THEN 'Sabtu'
-            end) as date_time,
-  avg(summary.value) as value from (
-SELECT device_id, device, date_time, sum(kw_eqv) as value from $table_name
-	where device in ('LVMDP C1', 'LVMDP C2', 'LVMDP 28')
-	group by CAST(date_time AS DATE), device
-) as summary
-where cast(date_time as DATE) BETWEEN (DATE_SUB(CURDATE(), INTERVAL 13 DAY)) and (DATE_SUB(CURDATE(), INTERVAL 7 DAY))
-group by cast(summary.date_time as DATE)
+            select 
+                (case
+                    when date_format(summary.date_time,'%w') = 0 THEN 'Minggu'
+                    when date_format(summary.date_time,'%w') = 1 THEN 'Senin'
+                    when date_format(summary.date_time,'%w') = 2 THEN 'Selasa'
+                    when date_format(summary.date_time,'%w') = 3 THEN 'Rabu'
+                    when date_format(summary.date_time,'%w') = 4 THEN 'Kamis'
+                    when date_format(summary.date_time,'%w') = 5 THEN 'Jum`at'
+                    when date_format(summary.date_time,'%w') = 6 THEN 'Sabtu'
+                    end) as date_time,
+                date_time as date,
+                round(sum(summary.value), 1) as value 
+            from (
+                select date_time, device, avg(kw_eqv) as value from meter_record_mm
+                where device like 'LVMDP %'
+                and cast(date_time as DATE) BETWEEN (DATE_SUB(CURDATE(), INTERVAL 13 DAY)) and (DATE_SUB(CURDATE(), INTERVAL 7 DAY))
+                group by cast(date_time as DATE), device 
+            ) as summary
+            group by cast(summary.date_time as DATE)
         ")->result_array();
 
         $data['chart3_this_7days'] = $this->db->query("
-select (case
-            when date_format(summary.date_time,'%w') = 0 THEN 'Minggu'
-            when date_format(summary.date_time,'%w') = 1 THEN 'Senin'
-            when date_format(summary.date_time,'%w') = 2 THEN 'Selasa'
-            when date_format(summary.date_time,'%w') = 3 THEN 'Rabu'
-            when date_format(summary.date_time,'%w') = 4 THEN 'Kamis'
-            when date_format(summary.date_time,'%w') = 5 THEN 'Jum`at'
-            when date_format(summary.date_time,'%w') = 6 THEN 'Sabtu'
-            end) as date_time,
-    avg(summary.value) as value from (
-SELECT device_id, device, date_time, sum(kw_eqv) as value from $table_name
-	where device in ('LVMDP C1', 'LVMDP C2', 'LVMDP 28')
-	group by CAST(date_time AS DATE), device
-) as summary
-where cast(date_time as DATE) BETWEEN (DATE_SUB(CURDATE(), INTERVAL 6 DAY)) and NOW()
-group by cast(summary.date_time as DATE)
+            select 
+                (case
+                    when date_format(summary.date_time,'%w') = 0 THEN 'Minggu'
+                    when date_format(summary.date_time,'%w') = 1 THEN 'Senin'
+                    when date_format(summary.date_time,'%w') = 2 THEN 'Selasa'
+                    when date_format(summary.date_time,'%w') = 3 THEN 'Rabu'
+                    when date_format(summary.date_time,'%w') = 4 THEN 'Kamis'
+                    when date_format(summary.date_time,'%w') = 5 THEN 'Jum`at'
+                    when date_format(summary.date_time,'%w') = 6 THEN 'Sabtu'
+                    end) as date_time,
+                date_time as date,
+                round(sum(summary.value), 1) as value 
+            from (
+                select date_time, device, avg(kw_eqv) as value from meter_record_mm
+                where device like 'LVMDP %'
+                and cast(date_time as DATE) BETWEEN (DATE_SUB(CURDATE(), INTERVAL 6 DAY)) and NOW()
+                group by cast(date_time as DATE), device 
+            ) as summary
+            group by cast(summary.date_time as DATE)
         ")->result_array();
 
         return $data;

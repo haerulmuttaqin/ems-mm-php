@@ -31,9 +31,9 @@ $(function () {
             legend: {
                 show: true
             },
-            grid: { containLabel: true },
-            xAxis: { name: 'Beban' },
-            yAxis: { type: 'category' },
+            grid: {containLabel: true},
+            xAxis: {name: 'Beban'},
+            yAxis: {type: 'category'},
             series: [
                 {
                     itemStyle: {
@@ -125,7 +125,7 @@ $(function () {
 
         const floorData4 = []
         data['chart4'].map((item) => {
-            floorData4.push({value: Math.round(item.value) || 0, name: item.caption})
+            floorData4.push({value: Number(item.value)?.toFixed(1) || 0, name: item.caption})
         })
         option4 = {
             title: {
@@ -145,6 +145,17 @@ $(function () {
                             return getRandomColor() || '#5470c6';
                         }
                     },
+                    label: {
+                        formatter: "{b} : {c|{@d}}",
+                        rich: {
+                            c: {
+                                color: "#4C5058",
+                                fontSize: 14,
+                                fontWeight: "bold",
+                                lineHeight: 33,
+                            },
+                        },
+                    },
                     emphasis: {
                         itemStyle: {
                             shadowBlur: 10,
@@ -161,5 +172,5 @@ $(function () {
 
     setTimeout(() => {
         window.location.replace(BASE_URL + "show/page4/"+unit);
-    }, 5000);
+    }, 15000);
 });

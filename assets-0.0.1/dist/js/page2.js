@@ -76,7 +76,7 @@ $(function () {
                     type: 'bar',
                     tooltip: {
                         valueFormatter: function (value) {
-                            return value + ' ml';
+                            return value + ' kW';
                         }
                     },
                     // data: data['chart1_last_week'].map((it) => it['value']),
@@ -87,7 +87,7 @@ $(function () {
                     type: 'bar',
                     tooltip: {
                         valueFormatter: function (value) {
-                            return value + ' ml';
+                            return value + ' kW';
                         }
                     },
                     // data: data['chart1_this_week'].map((it) => it['value']),
@@ -146,7 +146,7 @@ $(function () {
                     type: 'bar',
                     tooltip: {
                         valueFormatter: function (value) {
-                            return value + ' ml';
+                            return value + ' kW';
                         }
                     },
                     data: lastMonth,
@@ -156,7 +156,7 @@ $(function () {
                     type: 'bar',
                     tooltip: {
                         valueFormatter: function (value) {
-                            return value + ' ml';
+                            return value + ' kW';
                         }
                     },
                     data: thisMonth,
@@ -164,7 +164,15 @@ $(function () {
             ]
         };
 
-
+        const lastDays = [...new Set(data['chart3_last_7days'].map((it) => it['date_time']).concat(data['chart3_this_7days'].map((it) => it['date_time'])))]
+        const last7Days = []
+        const this7Days = []
+        lastDays.map((day) => {
+            const itemLast = data['chart3_last_7days'].find((it) => it['date_time'] === day)
+            const itemThis = data['chart3_this_7days'].find((it) => it['date_time'] === day)
+            last7Days.push(itemLast || {date_time: day, value: 0})
+            this7Days.push(itemThis || {date_time: day, value: 0})
+        })
         option3 = {
             tooltip: tooltipOpt,
             toolbox: tooltipBox,
@@ -175,7 +183,7 @@ $(function () {
             xAxis: [
                 {
                     type: 'category',
-                    data: data['chart3_last_7days'].map((it) => it['date_time']),
+                    data: lastDays,
                     axisPointer: {
                         type: 'shadow'
                     }
@@ -199,20 +207,20 @@ $(function () {
                     type: 'bar',
                     tooltip: {
                         valueFormatter: function (value) {
-                            return value + ' ml';
+                            return value + ' kW';
                         }
                     },
-                    data: data['chart3_last_7days'].map((it) => it['value']),
+                    data: last7Days,
                 },
                 {
                     name: 'Last 7 days',
                     type: 'bar',
                     tooltip: {
                         valueFormatter: function (value) {
-                            return value + ' ml';
+                            return value + ' kW';
                         }
                     },
-                    data: data['chart3_this_7days'].map((it) => it['value']),
+                    data: this7Days,
                 },
             ]
         };
@@ -225,5 +233,5 @@ $(function () {
 
     setTimeout(() => {
         window.location.replace(BASE_URL + "show/page3/"+unit);
-    }, 10000);
+    }, 15000);
 });

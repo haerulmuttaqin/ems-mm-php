@@ -78,5 +78,5 @@ $(function () {
 
     setTimeout(() => {
         window.location.replace(BASE_URL + "show/page2/"+unit);
-    }, 10000);
+    }, 15000);
 });

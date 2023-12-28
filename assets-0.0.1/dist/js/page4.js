@@ -157,5 +157,5 @@ $(function () {
 
     setTimeout(() => {
         window.location.replace(BASE_URL + "show/page5/"+unit);
-    }, 10000);
+    }, 15000);
 });

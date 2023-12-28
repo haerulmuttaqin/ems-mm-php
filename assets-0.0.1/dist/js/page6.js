@@ -233,5 +233,5 @@ $(function () {
 
     setTimeout(() => {
         window.location.replace(BASE_URL + "show/page7/"+unit);
-    }, 10000);
+    }, 15000);
 });
