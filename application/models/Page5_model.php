@@ -45,7 +45,7 @@ class Page5_model extends CI_Model
             array("caption" => "Lantai (LT27)", "key" => "Penerangan Dan Stop Kontak - PLT - LT27"),
             array("caption" => "Lantai ROOF (LT Roof)", "key" => "Penerangan Dan Stop Kontak - PLT - LT Roof"),
         );
-        for ($i = 0; $i < sizeof($type) ; $i++) {
+        for ($i = 0; $i < sizeof($type); $i++) {
             $item_floor = $type[$i];
             $key = $item_floor['key'];
             $caption = $item_floor['caption'];
@@ -67,7 +67,7 @@ class Page5_model extends CI_Model
             array("caption" => "Elektronik - BASS", "key" => "Elektronik - BASS"),
             array("caption" => "Elektronik - AC HUB - LT5", "key" => "Elektronik - AC HUB - LT5",),
         );
-        for ($i = 0; $i < sizeof($type) ; $i++) {
+        for ($i = 0; $i < sizeof($type); $i++) {
             $item_floor = $type[$i];
             $key = $item_floor['key'];
             $caption = $item_floor['caption'];
@@ -89,7 +89,7 @@ class Page5_model extends CI_Model
             array("caption" => "LIFT B (LIFT - LT28)", "key" => "LIFT - LT28"),
             array("caption" => "LIFT C (LIFT - LT4)", "key" => "LIFT - LT4"),
         );
-        for ($i = 0; $i < sizeof($type) ; $i++) {
+        for ($i = 0; $i < sizeof($type); $i++) {
             $item_floor = $type[$i];
             $key = $item_floor['key'];
             $caption = $item_floor['caption'];
@@ -101,59 +101,114 @@ class Page5_model extends CI_Model
 
         return $data;
     }
+
     public function getTableData($unit)
     {
         $table_name = 'meter_record_' . $unit;
         $data = array();
+        switch ($unit) {
+            case "mm":
+                $type = array(
+                    array("caption" => "LVMDP C1", "key" => "LVMDP C1"),
+                    array("caption" => "LVMDP C2", "key" => "LVMDP C2"),
+                    array("caption" => "LVMDP 28", "key" => "LVMDP 28"),
+                    array("caption" => "SDP - SB", "key" => "SDP - SB"),
+                    array("caption" => "SDP - B1", "key" => "SDP - B1"),
+                    array("caption" => "SDP - B2", "key" => "SDP - B2"),
+                    array("caption" => "SDP - LT1", "key" => "SDP - LT1"),
+                    array("caption" => "SDP - LT8", "key" => "SDP - LT8"),
+                    array("caption" => "SDP - LT15", "key" => "SDP - LT15"),
+                    array("caption" => "SDP - LT22", "key" => "SDP - LT22"),
+                    array("caption" => "SDP - CBB NEW", "key" => "SDP - CBB NEW"),
+                    array("caption" => "SDP - GALLERY", "key" => "SDP - GALLERY"),
+                    array("caption" => "SDP FIRE FIGHTING", "key" => "SDP FIRE FIGHTING"),
+                );
+                break;
+            case "a1":
+                $type = array(
+                    array("caption" => "LVMDP C1", "key" => "LVMDP C1"),
+                    array("caption" => "LVMDP C2", "key" => "LVMDP C2"),
+                    array("caption" => "LVMDP 28", "key" => "LVMDP 28"),
+                    array("caption" => "SDP - SB", "key" => "SDP - SB"),
+                    array("caption" => "SDP - B1", "key" => "SDP - B1"),
+                    array("caption" => "SDP - B2", "key" => "SDP - B2"),
+                    array("caption" => "SDP - LT1", "key" => "SDP - LT1"),
+                    array("caption" => "SDP - LT8", "key" => "SDP - LT8"),
+                    array("caption" => "SDP - LT15", "key" => "SDP - LT15"),
+                    array("caption" => "SDP - LT22", "key" => "SDP - LT22"),
+                    array("caption" => "SDP - CBB NEW", "key" => "SDP - CBB NEW"),
+                    array("caption" => "SDP - GALLERY", "key" => "SDP - GALLERY"),
+                    array("caption" => "SDP FIRE FIGHTING", "key" => "SDP FIRE FIGHTING"),
+                );
+                break;
+            default:
+                $type = array(
+                    array("caption" => "LVMDP C1", "key" => "LVMDP C1"),
+                    array("caption" => "LVMDP C2", "key" => "LVMDP C2"),
+                    array("caption" => "LVMDP 28", "key" => "LVMDP 28"),
+                    array("caption" => "SDP - SB", "key" => "SDP - SB"),
+                    array("caption" => "SDP - B1", "key" => "SDP - B1"),
+                    array("caption" => "SDP - B2", "key" => "SDP - B2"),
+                    array("caption" => "SDP - LT1", "key" => "SDP - LT1"),
+                    array("caption" => "SDP - LT8", "key" => "SDP - LT8"),
+                    array("caption" => "SDP - LT15", "key" => "SDP - LT15"),
+                    array("caption" => "SDP - LT22", "key" => "SDP - LT22"),
+                    array("caption" => "SDP - CBB NEW", "key" => "SDP - CBB NEW"),
+                    array("caption" => "SDP - GALLERY", "key" => "SDP - GALLERY"),
+                    array("caption" => "SDP FIRE FIGHTING", "key" => "SDP FIRE FIGHTING"),
+                );
+                break;
+        }
 
-        $type = array(
-            array("caption" => "LVMDP C1", "key" => "LVMDP C1"),
-            array("caption" => "LVMDP C2", "key" => "LVMDP C2"),
-            array("caption" => "LVMDP 28", "key" => "LVMDP 28"),
-            array("caption" => "SDP - SB", "key" => "SDP - SB"),
-            array("caption" => "SDP - B1", "key" => "SDP - B1"),
-            array("caption" => "SDP - B2", "key" => "SDP - B2"),
-            array("caption" => "SDP - LT1", "key" => "SDP - LT1"),
-            array("caption" => "SDP - LT8", "key" => "SDP - LT8"),
-            array("caption" => "SDP - LT15", "key" => "SDP - LT15"),
-            array("caption" => "SDP - LT22", "key" => "SDP - LT22"),
-            array("caption" => "SDP - CBB NEW", "key" => "SDP - CBB NEW"),
-            array("caption" => "SDP - GALLERY", "key" => "SDP - GALLERY"),
-            array("caption" => "SDP FIRE FIGHTING", "key" => "SDP FIRE FIGHTING"),
-        );
-        for ($i = 0; $i < sizeof($type) ; $i++) {
+        for ($i = 0; $i < sizeof($type); $i++) {
             $item_floor = $type[$i];
             $key = $item_floor['key'];
             $caption = $item_floor['caption'];
             $data[] = $this->db->query("
                select 
                    '$caption' as caption, 
-               (
+                   (
+                        ifnull(
+                            (
+                                select
+                                kwh_imp as value
+                                from $table_name
+                                where month(date_time) = month(curdate()) and year(date_time) = year(curdate()) and device like '$key'
+                                order by date_time asc limit 1
+                            ),
+                            0
+                        ) - ifnull(
+                            (
+                                select
+                                kwh_imp as value
+                                from $table_name
+                                where month(date_time) = month(curdate() - interval 1 month) and year(date_time) = year(curdate() - interval 1 month) and device like '$key'
+                                order by date_time asc limit 1
+                            ),
+                            0
+                        )
+                    ) as value_active_e,
                     (
-                    select 
-                    kwh_imp
-                    from $table_name
-                    where cast(date_time as DATE) = last_day(curdate() - interval 1 month) + interval 1 day and device like '$key'
-                    ) - (
-                    select 
-                    kwh_imp
-                    from $table_name
-                    where cast(date_time as DATE) = last_day(curdate() - interval 2 month) + interval 1 day and device like '$key'
-                    )
-                ) as value_active_e,
-                (
-                    (
-                    select 
-                    kvarh_imp
-                    from $table_name
-                    where cast(date_time as DATE) = last_day(curdate() - interval 1 month) + interval 1 day and device like '$key'
-                    ) - (
-                    select 
-                    kvarh_imp
-                    from $table_name
-                    where cast(date_time as DATE) = last_day(curdate() - interval 2 month) + interval 1 day and device like '$key'
-                    )
-                ) as value_reactive_e
+                        ifnull(
+                            (
+                                select
+                                kvarh_imp as value
+                                from $table_name
+                                where month(date_time) = month(curdate()) and year(date_time) = year(curdate()) and device like '$key'
+                                order by date_time asc limit 1
+                            ),
+                            0
+                        ) - ifnull(
+                            (
+                                select
+                                kvarh_imp as value
+                                from $table_name
+                                where month(date_time) = month(curdate() - interval 1 month) and year(date_time) = year(curdate() - interval 1 month) and device like '$key'
+                                order by date_time asc limit 1
+                            ),
+                            0
+                        )
+                    ) as value_reactive_e
             ")->row_array();
         }
 
