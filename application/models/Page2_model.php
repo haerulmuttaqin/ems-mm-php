@@ -119,367 +119,320 @@ class Page2_model extends CI_Model
 
     public function getTableData($unit)
     {
+        $table_config_name = 'dash_config_' . $unit;
+        $dash_config = $this->db->get_where($table_config_name, array('page_num' => 2, 'card_num' => 4))->result_array();
         $table_name = 'meter_record_'.$unit;
 
         // data1 Current Avg (I)
+        $first_field_data1 = "";
+        $query_field_data1 = "";
+        $query_body_data1 = "";
+        $num = 0;
+        foreach ($dash_config as $cfg) {
+            $key = $cfg['key'];
+            $query_field_data1 .= "sub_".str_replace(" ", "_", $key).".".str_replace(" ", "_", $key)."";
+            if ($num == 0) {
+                $first_field_data1 = "sub_".str_replace(" ", "_", $key)."";
+            }
+            $query_body_data1 .= "
+                (select
+                  ifnull(t.date_time, '') as date_time,
+                  ifnull(t.caption, 'Current Avg (I)') as caption,
+                  ifnull(t.".str_replace(" ", "_", $key).", null) as ".str_replace(" ", "_", $key)."
+                from (select '' as date_time, 'Current Avg (I)' caption, 0 as ".str_replace(" ", "_", $key).") a
+                       left join (SELECT date_time, 'Current Avg (I)' as caption, a_avg as ".str_replace(" ", "_", $key)."
+                                  FROM $table_name
+                                  WHERE device LIKE '%$key%'
+                                  order by date_time desc
+                                  limit 1) as t on a.caption=t.caption) as sub_".str_replace(" ", "_", $key)."";
+            if ($num < (sizeof($dash_config) - 1)) {
+                $query_field_data1 .= ",";
+                $query_body_data1 .= ",";
+            }
+            $num++;
+        }
         $query_data1 =
             "
-                        select * from
-                        (
-                                SELECT
-                                date_time,
-                                'Current Avg (I)' as caption,
-                                a_avg as value_lvmdp_c1
-                                FROM
-                                $table_name
-                                WHERE
-                                device LIKE '%LVMDP C1%'
-                                order by
-                                date_time desc
-                                LIMIT
-                                1
-                        ) as value1,
-                        (
-                                SELECT
-                                a_avg as value_lvmdp_c2
-                                FROM
-                                $table_name
-                                WHERE
-                                device LIKE '%LVMDP C2%'
-                                order by
-                                date_time desc
-                                LIMIT
-                                1
-                        ) as value2,
-                        (
-                                SELECT
-                                a_avg as value_lvmdp_28
-                                FROM
-                                $table_name
-                                WHERE
-                                device LIKE '%LVMDP 28%'
-                                order by
-                                date_time desc
-                                LIMIT
-                                1
-                        ) as value3;
-                        ";
+            select 
+                $first_field_data1.date_time,
+                $first_field_data1.caption,
+                $query_field_data1 
+            from
+                $query_body_data1;
+            ";
 
 
         // data2 Frequency (Hz)
+        $first_field_data2 = "";
+        $query_field_data2 = "";
+        $query_body_data2 = "";
+        $num = 0;
+        foreach ($dash_config as $cfg) {
+            $key = $cfg['key'];
+            $query_field_data2 .= "sub_".str_replace(" ", "_", $key).".".str_replace(" ", "_", $key)."";
+            if ($num == 0) {
+                $first_field_data2 = "sub_".str_replace(" ", "_", $key)."";
+            }
+            $query_body_data2 .= "
+                (select
+                  ifnull(t.date_time, '') as date_time,
+                  ifnull(t.caption, 'Frequency (Hz)') as caption,
+                  ifnull(t.".str_replace(" ", "_", $key).", null) as ".str_replace(" ", "_", $key)."
+                from (select '' as date_time, 'Frequency (Hz)' caption, 0 as ".str_replace(" ", "_", $key).") a
+                       left join (SELECT date_time, 'Frequency (Hz)' as caption, hz_avg as ".str_replace(" ", "_", $key)."
+                                  FROM $table_name
+                                  WHERE device LIKE '%$key%'
+                                  order by date_time desc
+                                  limit 1) as t on a.caption=t.caption) as sub_".str_replace(" ", "_", $key)."";
+            if ($num < (sizeof($dash_config) - 1)) {
+                $query_field_data2 .= ",";
+                $query_body_data2 .= ",";
+            }
+            $num++;
+        }
         $query_data2 =
             "
-                        select * from
-                        (
-                                SELECT
-                                date_time,
-                                'Frequency (Hz)' as caption,
-                                hz_avg as value_lvmdp_c1
-                                FROM
-                                $table_name
-                                WHERE
-                                device LIKE '%LVMDP C1%'
-                                order by
-                                date_time desc
-                                LIMIT
-                                1
-                        ) as value1,
-                        (
-                                SELECT
-                                hz_avg as value_lvmdp_c2
-                                FROM
-                                $table_name
-                                WHERE
-                                device LIKE '%LVMDP C2%'
-                                order by
-                                date_time desc
-                                LIMIT
-                                1
-                        ) as value2,
-                        (
-                                SELECT
-                                hz_avg as value_lvmdp_28
-                                FROM
-                                $table_name
-                                WHERE
-                                device LIKE '%LVMDP 28%'
-                                order by
-                                date_time desc
-                                LIMIT
-                                1
-                        ) as value3;
-                        ";
+            select 
+                $first_field_data2.date_time,
+                $first_field_data2.caption,
+                $query_field_data2 
+            from
+                $query_body_data2;
+            ";
 
 
         // data3 Power Factor
+        $first_field_data3 = "";
+        $query_field_data3 = "";
+        $query_body_data3 = "";
+        $num = 0;
+        foreach ($dash_config as $cfg) {
+            $key = $cfg['key'];
+            $query_field_data3 .= "sub_".str_replace(" ", "_", $key).".".str_replace(" ", "_", $key)."";
+            if ($num == 0) {
+                $first_field_data3 = "sub_".str_replace(" ", "_", $key)."";
+            }
+            $query_body_data3 .= "
+                (select
+                  ifnull(t.date_time, '') as date_time,
+                  ifnull(t.caption, 'Power Factor') as caption,
+                  ifnull(t.".str_replace(" ", "_", $key).", null) as ".str_replace(" ", "_", $key)."
+                from (select '' as date_time, 'Power Factor' caption, 0 as ".str_replace(" ", "_", $key).") a
+                       left join (SELECT date_time, 'Power Factor' as caption, pf_avg as ".str_replace(" ", "_", $key)."
+                                  FROM $table_name
+                                  WHERE device LIKE '%$key%'
+                                  order by date_time desc
+                                  limit 1) as t on a.caption=t.caption) as sub_".str_replace(" ", "_", $key)."";
+            if ($num < (sizeof($dash_config) - 1)) {
+                $query_field_data3 .= ",";
+                $query_body_data3 .= ",";
+            }
+            $num++;
+        }
         $query_data3 =
             "
-                        select * from
-                        (
-                                SELECT
-                                date_time,
-                                'Power Factor' as caption,
-                                pf_avg as value_lvmdp_c1
-                                FROM
-                                $table_name
-                                WHERE
-                                device LIKE '%LVMDP C1%'
-                                order by
-                                date_time desc
-                                LIMIT
-                                1
-                        ) as value1,
-                        (
-                                SELECT
-                                pf_avg as value_lvmdp_c2
-                                FROM
-                                $table_name
-                                WHERE
-                                device LIKE '%LVMDP C2%'
-                                order by
-                                date_time desc
-                                LIMIT
-                                1
-                        ) as value2,
-                        (
-                                SELECT
-                                pf_avg as value_lvmdp_28
-                                FROM
-                                $table_name
-                                WHERE
-                                device LIKE '%LVMDP 28%'
-                                order by
-                                date_time desc
-                                LIMIT
-                                1
-                        ) as value3;
-                        ";
+            select 
+                $first_field_data3.date_time,
+                $first_field_data3.caption,
+                $query_field_data3 
+            from
+                $query_body_data3;
+            ";
 
 
         // data4 Voltage Phase to Phase (V)
+        $first_field_data4 = "";
+        $query_field_data4 = "";
+        $query_body_data4 = "";
+        $num = 0;
+        foreach ($dash_config as $cfg) {
+            $key = $cfg['key'];
+            $query_field_data4 .= "sub_".str_replace(" ", "_", $key).".".str_replace(" ", "_", $key)."";
+            if ($num == 0) {
+                $first_field_data4 = "sub_".str_replace(" ", "_", $key)."";
+            }
+            $query_body_data4 .= "
+                (select
+                  ifnull(t.date_time, '') as date_time,
+                  ifnull(t.caption, 'Voltage Phase to Phase (V)') as caption,
+                  ifnull(t.".str_replace(" ", "_", $key).", null) as ".str_replace(" ", "_", $key)."
+                from (select '' as date_time, 'Voltage Phase to Phase (V)' caption, 0 as ".str_replace(" ", "_", $key).") a
+                       left join (SELECT date_time, 'Voltage Phase to Phase (V)' as caption, vll_avg as ".str_replace(" ", "_", $key)."
+                                  FROM $table_name
+                                  WHERE device LIKE '%$key%'
+                                  order by date_time desc
+                                  limit 1) as t on a.caption=t.caption) as sub_".str_replace(" ", "_", $key)."";
+            if ($num < (sizeof($dash_config) - 1)) {
+                $query_field_data4 .= ",";
+                $query_body_data4 .= ",";
+            }
+            $num++;
+        }
         $query_data4 =
             "
-                        select * from
-                        (
-                                SELECT
-                                date_time,
-                                'Voltage Phase to Phase (V)' as caption,
-                                vll_avg as value_lvmdp_c1
-                                FROM
-                                $table_name
-                                WHERE
-                                device LIKE '%LVMDP C1%'
-                                order by
-                                date_time desc
-                                LIMIT
-                                1
-                        ) as value1,
-                        (
-                                SELECT
-                                vll_avg as value_lvmdp_c2
-                                FROM
-                                $table_name
-                                WHERE
-                                device LIKE '%LVMDP C2%'
-                                order by
-                                date_time desc
-                                LIMIT
-                                1
-                        ) as value2,
-                        (
-                                SELECT
-                                vll_avg as value_lvmdp_28
-                                FROM
-                                $table_name
-                                WHERE
-                                device LIKE '%LVMDP 28%'
-                                order by
-                                date_time desc
-                                LIMIT
-                                1
-                        ) as value3;
-                        ";
+            select 
+                $first_field_data4.date_time,
+                $first_field_data4.caption,
+                $query_field_data4 
+            from
+                $query_body_data4;
+            ";
 
 
         // data5 THDI (%)
+        $first_field_data5 = "";
+        $query_field_data5 = "";
+        $query_body_data5 = "";
+        $num = 0;
+        foreach ($dash_config as $cfg) {
+            $key = $cfg['key'];
+            $query_field_data5 .= "sub_".str_replace(" ", "_", $key).".".str_replace(" ", "_", $key)."";
+            if ($num == 0) {
+                $first_field_data5 = "sub_".str_replace(" ", "_", $key)."";
+            }
+            $query_body_data5 .= "
+                (select
+                  ifnull(t.date_time, '') as date_time,
+                  ifnull(t.caption, 'THDI (%)') as caption,
+                  ifnull(t.".str_replace(" ", "_", $key).", null) as ".str_replace(" ", "_", $key)."
+                from (select '' as date_time, 'THDI (%)' caption, 0 as ".str_replace(" ", "_", $key).") a
+                       left join (SELECT date_time, 'THDI (%)' as caption, thd_avg as ".str_replace(" ", "_", $key)."
+                                  FROM $table_name
+                                  WHERE device LIKE '%$key%'
+                                  order by date_time desc
+                                  limit 1) as t on a.caption=t.caption) as sub_".str_replace(" ", "_", $key)."";
+            if ($num < (sizeof($dash_config) - 1)) {
+                $query_field_data5 .= ",";
+                $query_body_data5 .= ",";
+            }
+            $num++;
+        }
         $query_data5 =
             "
-                        select * from
-                        (
-                                SELECT
-                                date_time,
-                                'THDI (%)' as caption,
-                                thd_avg as value_lvmdp_c1
-                                FROM
-                                $table_name
-                                WHERE
-                                device LIKE '%LVMDP C1%'
-                                order by
-                                date_time desc
-                                LIMIT
-                                1
-                        ) as value1,
-                        (
-                                SELECT
-                                thd_avg as value_lvmdp_c2
-                                FROM
-                                $table_name
-                                WHERE
-                                device LIKE '%LVMDP C2%'
-                                order by
-                                date_time desc
-                                LIMIT
-                                1
-                        ) as value2,
-                        (
-                                SELECT
-                                thd_avg as value_lvmdp_28
-                                FROM
-                                $table_name
-                                WHERE
-                                device LIKE '%LVMDP 28%'
-                                order by
-                                date_time desc
-                                LIMIT
-                                1
-                        ) as value3;
-                        ";
+            select 
+                $first_field_data5.date_time,
+                $first_field_data5.caption,
+                $query_field_data5 
+            from
+                $query_body_data5;
+            ";
 
 
         // data6 Active Power EQV (kW)
+        $first_field_data6 = "";
+        $query_field_data6 = "";
+        $query_body_data6 = "";
+        $num = 0;
+        foreach ($dash_config as $cfg) {
+            $key = $cfg['key'];
+            $query_field_data6 .= "sub_".str_replace(" ", "_", $key).".".str_replace(" ", "_", $key)."";
+            if ($num == 0) {
+                $first_field_data6 = "sub_".str_replace(" ", "_", $key)."";
+            }
+            $query_body_data6 .= "
+                (select
+                  ifnull(t.date_time, '') as date_time,
+                  ifnull(t.caption, 'Active Power EQV (kW)') as caption,
+                  ifnull(t.".str_replace(" ", "_", $key).", null) as ".str_replace(" ", "_", $key)."
+                from (select '' as date_time, 'Active Power EQV (kW)' caption, 0 as ".str_replace(" ", "_", $key).") a
+                       left join (SELECT date_time, 'Active Power EQV (kW)' as caption, kw_eqv as ".str_replace(" ", "_", $key)."
+                                  FROM $table_name
+                                  WHERE device LIKE '%$key%'
+                                  order by date_time desc
+                                  limit 1) as t on a.caption=t.caption) as sub_".str_replace(" ", "_", $key)."";
+            if ($num < (sizeof($dash_config) - 1)) {
+                $query_field_data6 .= ",";
+                $query_body_data6 .= ",";
+            }
+            $num++;
+        }
         $query_data6 =
             "
-                        select * from
-                        (
-                                SELECT
-                                date_time,
-                                'Active Power EQV (kW)' as caption,
-                                kw_eqv as value_lvmdp_c1
-                                FROM
-                                $table_name
-                                WHERE
-                                device LIKE '%LVMDP C1%'
-                                order by
-                                date_time desc
-                                LIMIT
-                                1
-                        ) as value1,
-                        (
-                                SELECT
-                                kw_eqv as value_lvmdp_c2
-                                FROM
-                                $table_name
-                                WHERE
-                                device LIKE '%LVMDP C2%'
-                                order by
-                                date_time desc
-                                LIMIT
-                                1
-                        ) as value2,
-                        (
-                                SELECT
-                                kw_eqv as value_lvmdp_28
-                                FROM
-                                $table_name
-                                WHERE
-                                device LIKE '%LVMDP 28%'
-                                order by
-                                date_time desc
-                                LIMIT
-                                1
-                        ) as value3;
-                        ";
+            select 
+                $first_field_data6.date_time,
+                $first_field_data6.caption,
+                $query_field_data6 
+            from
+                $query_body_data6;
+            ";
 
 
         // data7 Reactive Power EQV (kVAR)
+        $first_field_data7 = "";
+        $query_field_data7 = "";
+        $query_body_data7 = "";
+        $num = 0;
+        foreach ($dash_config as $cfg) {
+            $key = $cfg['key'];
+            $query_field_data7 .= "sub_".str_replace(" ", "_", $key).".".str_replace(" ", "_", $key)."";
+            if ($num == 0) {
+                $first_field_data7 = "sub_".str_replace(" ", "_", $key)."";
+            }
+            $query_body_data7 .= "
+                (select
+                  ifnull(t.date_time, '') as date_time,
+                  ifnull(t.caption, 'Reactive Power EQV (kVAR)') as caption,
+                  ifnull(t.".str_replace(" ", "_", $key).", null) as ".str_replace(" ", "_", $key)."
+                from (select '' as date_time, 'Reactive Power EQV (kVAR)' caption, 0 as ".str_replace(" ", "_", $key).") a
+                       left join (SELECT date_time, 'Reactive Power EQV (kVAR)' as caption, kvar_eqv as ".str_replace(" ", "_", $key)."
+                                  FROM $table_name
+                                  WHERE device LIKE '%$key%'
+                                  order by date_time desc
+                                  limit 1) as t on a.caption=t.caption) as sub_".str_replace(" ", "_", $key)."";
+            if ($num < (sizeof($dash_config) - 1)) {
+                $query_field_data7 .= ",";
+                $query_body_data7 .= ",";
+            }
+            $num++;
+        }
         $query_data7 =
             "
-                        select * from
-                        (
-                                SELECT
-                                date_time,
-                                'Reactive Power EQV (kVAR)' as caption,
-                                kvar_eqv as value_lvmdp_c1
-                                FROM
-                                $table_name
-                                WHERE
-                                device LIKE '%LVMDP C1%'
-                                order by
-                                date_time desc
-                                LIMIT
-                                1
-                        ) as value1,
-                        (
-                                SELECT
-                                kvar_eqv as value_lvmdp_c2
-                                FROM
-                                $table_name
-                                WHERE
-                                device LIKE '%LVMDP C2%'
-                                order by
-                                date_time desc
-                                LIMIT
-                                1
-                        ) as value2,
-                        (
-                                SELECT
-                                kvar_eqv as value_lvmdp_28
-                                FROM
-                                $table_name
-                                WHERE
-                                device LIKE '%LVMDP 28%'
-                                order by
-                                date_time desc
-                                LIMIT
-                                1
-                        ) as value3;
-                        ";
+            select 
+                $first_field_data7.date_time,
+                $first_field_data7.caption,
+                $query_field_data7 
+            from
+                $query_body_data7;
+            ";
 
 
-        // data6 Active Power EQV (kW)
         // data8 Apparent Power EQV (kVA)
+        $first_field_data8 = "";
+        $query_field_data8 = "";
+        $query_body_data8 = "";
+        $num = 0;
+        foreach ($dash_config as $cfg) {
+            $key = $cfg['key'];
+            $query_field_data8 .= "sub_".str_replace(" ", "_", $key).".".str_replace(" ", "_", $key)."";
+            if ($num == 0) {
+                $first_field_data8 = "sub_".str_replace(" ", "_", $key)."";
+            }
+            $query_body_data8 .= "
+                (select
+                  ifnull(t.date_time, '') as date_time,
+                  ifnull(t.caption, 'Apparent Power EQV (kVA)') as caption,
+                  ifnull(t.".str_replace(" ", "_", $key).", null) as ".str_replace(" ", "_", $key)."
+                from (select '' as date_time, 'Apparent Power EQV (kVA)' caption, 0 as ".str_replace(" ", "_", $key).") a
+                       left join (SELECT date_time, 'Apparent Power EQV (kVA)' as caption, kva_eqv as ".str_replace(" ", "_", $key)."
+                                  FROM $table_name
+                                  WHERE device LIKE '%$key%'
+                                  order by date_time desc
+                                  limit 1) as t on a.caption=t.caption) as sub_".str_replace(" ", "_", $key)."";
+            if ($num < (sizeof($dash_config) - 1)) {
+                $query_field_data8 .= ",";
+                $query_body_data8 .= ",";
+            }
+            $num++;
+        }
         $query_data8 =
             "
-                        select * from
-                        (
-                                SELECT
-                                date_time,
-                                'Apparent Power EQV (kVA)' as caption,
-                                kva_eqv as value_lvmdp_c1
-                                FROM
-                                $table_name
-                                WHERE
-                                device LIKE '%LVMDP C1%'
-                                order by
-                                date_time desc
-                                LIMIT
-                                1
-                        ) as value1,
-                        (
-                                SELECT
-                                kva_eqv as value_lvmdp_c2
-                                FROM
-                                $table_name
-                                WHERE
-                                device LIKE '%LVMDP C2%'
-                                order by
-                                date_time desc
-                                LIMIT
-                                1
-                        ) as value2,
-                        (
-                                SELECT
-                                kva_eqv as value_lvmdp_28
-                                FROM
-                                $table_name
-                                WHERE
-                                device LIKE '%LVMDP 28%'
-                                order by
-                                date_time desc
-                                LIMIT
-                                1
-                        ) as value3;
-                        ";
+            select 
+                $first_field_data8.date_time,
+                $first_field_data8.caption,
+                $query_field_data8 
+            from
+                $query_body_data8;
+            ";
 
 
         //Query result
@@ -492,7 +445,8 @@ class Page2_model extends CI_Model
         $data7 = $this->db->query($query_data7)->result_array();
         $data8 = $this->db->query($query_data8)->result_array();
 
-        $data = array_merge($data1, $data2, $data3, $data4, $data5, $data6, $data7, $data8);
+        $data['header'] = $dash_config;
+        $data['body'] = array_merge($data1, $data2, $data3, $data4, $data5, $data6, $data7, $data8);
         return $data;
     }
 }

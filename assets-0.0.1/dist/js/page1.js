@@ -11,7 +11,10 @@ $(function () {
     $.get(BASE_URL + 'show/page1/pie_data/' + unit, function (result) {
 
         const data = JSON.parse(result)
-
+        const chartData = []
+        data.forEach((item) => {
+            chartData.push({value: Math.round(item?.value) || 0, name: item?.caption || ""})
+        })
         option = {
             tooltip: {
                 trigger: "item",
@@ -61,13 +64,7 @@ $(function () {
                             },
                         },
                     },
-                    data: [
-                        {value: Math.round(data?.lift?.value) || 0, name: "PM LIFT"},
-                        {value: Math.round(data?.penerangan?.value) || 0, name: "PM PENERANGAN & STOP KONTAK"},
-                        {value: Math.round(data?.elektronik?.value) || 0, name: "PM ELEKTRONIK"},
-                        {value: Math.round(data?.tataudara?.value) || 0, name: "PM TATA UDARA"},
-                        {value: Math.round(data?.tataair?.value) || 0, name: "PM TATA AIR"},
-                    ],
+                    data: chartData,
                 },
             ],
         };

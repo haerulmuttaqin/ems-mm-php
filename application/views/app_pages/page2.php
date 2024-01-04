@@ -20,24 +20,22 @@
             <div class="card card-primary">
                 <div class="card-body">
                     <h4 class="text-bold text-center">TABEL PENGUKURAN PANEL UTAMA</h4>
-                    <table class="table" style="height: 100%;">
+                    <table class="table table-responsive" style="height: 100%;">
                         <thead class="thead-dark">
                         <tr>
-                            <th scope="col" style="width: 16%; vertical-align: middle;">MEASUREMENT</th>
-                            <th scope="col" style="width: 16%; vertical-align: middle;">PANEL UTAMA 1 (LVMDP C1)</th>
-                            <th scope="col" style="width: 16%; vertical-align: middle;">PANEL UTAMA 2 (LVMDP C2)</th>
-                            <th scope="col" style="width: 16%; vertical-align: middle;">PANEL UTAMA 3 (LVMDP 28)</th>
+                            <th scope="col" style="vertical-align: middle;">MEASUREMENT</th>
+                            <?php foreach ($data['header'] as $item) : ?>
+                                <th scope="col" style="vertical-align: middle;"><?= $item['caption'] ?></th>
+                            <?php endforeach; ?>
                         </tr>
                         </thead>
-
-
                         <tbody>
-                        <?php foreach ($data as $item) : ?>
+                        <?php foreach ($data['body'] as $item) : ?>
                             <tr>
                                 <th><?= $item['caption'] ?></th>
-                                <td><?= $item['value_lvmdp_c1'] ?></td>
-                                <td><?= $item['value_lvmdp_c2'] ?></td>
-                                <td><?= $item['value_lvmdp_28'] ?></td>
+                                <?php foreach ($data['header'] as $item_header) : ?>
+                                    <td><?= $item[str_replace(" ", "_", $item_header['key'])] ?: "-" ?></td>
+                                <?php endforeach; ?>
                             </tr>
                         <?php endforeach; ?>
                         </tbody>

@@ -12,26 +12,22 @@
             <div class="card card-primary">
                 <div class="card-body">
                     <h4 class="text-bold text-center">TABEL PENGUKURAN DAYA LANTAI</h4>
-                    <table class="table" style="height: 100%;">
+                    <table class="table table-responsive" style="height: 100%;">
                         <thead class="thead-dark">
                         <tr>
-                            <th scope="col" style="width: 16%; vertical-align: middle;">MEASUREMENT</th>
-                            <th scope="col" style="width: 16%; vertical-align: middle;">PM LIFT</th>
-                            <th scope="col" style="width: 20%; vertical-align: middle;">PM PENERANGAN & STOP KONTAK</th>
-                            <th scope="col" style="width: 16%; vertical-align: middle;">PM ELEKTRONIK</th>
-                            <th scope="col" style="width: 16%; vertical-align: middle;">PM TATA UDARA</th>
-                            <th scope="col" style="width: 16%; vertical-align: middle;">PM TATA AIR</th>
+                            <th scope="col" style="vertical-align: middle;">MEASUREMENT</th>
+                            <?php foreach ($data['header'] as $item) : ?>
+                                <th scope="col" style="vertical-align: middle;"><?= $item['caption'] ?></th>
+                            <?php endforeach; ?>
                         </tr>
                         </thead>
                         <tbody>
-                        <?php foreach ($data as $item) : ?>
+                        <?php foreach ($data['body'] as $item) : ?>
                             <tr>
                                 <th><?= $item['caption'] ?></th>
-                                <td><?= $item['value_lift'] ?></td>
-                                <td><?= $item['value_penerangan'] ?></td>
-                                <td><?= $item['value_elektronik'] ?></td>
-                                <td><?= $item['value_udara'] ?></td>
-                                <td><?= $item['value_air'] ?></td>
+                                <?php foreach ($data['header'] as $item_header) : ?>
+                                    <td><?= $item[str_replace(" ", "_", $item_header['key'])] ?: "-" ?></td>
+                                <?php endforeach; ?>
                             </tr>
                         <?php endforeach; ?>
                         </tbody>

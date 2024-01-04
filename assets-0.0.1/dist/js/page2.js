@@ -61,7 +61,7 @@ $(function () {
             yAxis: [
                 {
                     type: 'value',
-                    name: 'kW',
+                    name: 'kWH',
                     min: 0,
                     // max: 100,
                     // interval: 50,
@@ -76,7 +76,7 @@ $(function () {
                     type: 'bar',
                     tooltip: {
                         valueFormatter: function (value) {
-                            return value + ' kW';
+                            return value + ' kWH';
                         }
                     },
                     // data: data['chart1_last_week'].map((it) => it['value']),
@@ -87,7 +87,7 @@ $(function () {
                     type: 'bar',
                     tooltip: {
                         valueFormatter: function (value) {
-                            return value + ' kW';
+                            return value + ' kWH';
                         }
                     },
                     // data: data['chart1_this_week'].map((it) => it['value']),
@@ -131,7 +131,7 @@ $(function () {
             yAxis: [
                 {
                     type: 'value',
-                    name: 'kW',
+                    name: 'kWH',
                     min: 0,
                     // max: 100,
                     // interval: 50,
@@ -146,7 +146,7 @@ $(function () {
                     type: 'bar',
                     tooltip: {
                         valueFormatter: function (value) {
-                            return value + ' kW';
+                            return value + ' kWH';
                         }
                     },
                     data: lastMonth,
@@ -156,7 +156,7 @@ $(function () {
                     type: 'bar',
                     tooltip: {
                         valueFormatter: function (value) {
-                            return value + ' kW';
+                            return value + ' kWH';
                         }
                     },
                     data: thisMonth,
@@ -192,7 +192,7 @@ $(function () {
             yAxis: [
                 {
                     type: 'value',
-                    name: 'kW',
+                    name: 'kWH',
                     min: 0,
                     // max: 100,
                     // interval: 50,
@@ -207,7 +207,7 @@ $(function () {
                     type: 'bar',
                     tooltip: {
                         valueFormatter: function (value) {
-                            return value + ' kW';
+                            return value + ' kWH';
                         }
                     },
                     data: last7Days,
@@ -217,7 +217,7 @@ $(function () {
                     type: 'bar',
                     tooltip: {
                         valueFormatter: function (value) {
-                            return value + ' kW';
+                            return value + ' kWH';
                         }
                     },
                     data: this7Days,
