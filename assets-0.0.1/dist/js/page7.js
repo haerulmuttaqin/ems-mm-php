@@ -15,6 +15,10 @@ $(function () {
     $.get(BASE_URL + "show/page7/chart_data/" + unit, function (result) {
         const data = JSON.parse(result);
         const pieData = data['used_ratio']
+        const chartData = []
+        pieData.forEach((item) => {
+            chartData.push({value: Number(item?.value).toFixed(1) || 0, name: item?.caption || ""})
+        })
         option1 = {
             tooltip: {
                 trigger: "item",
@@ -64,22 +68,7 @@ $(function () {
                             },
                         },
                     },
-                    data: [
-                        {value: Math.round(pieData?.lift?.value), name: "PM LIFT"},
-                        {
-                            value: Math.round(pieData?.penerangan?.value),
-                            name: "PM PENERANGAN & STOP KONTAK",
-                        },
-                        {
-                            value: Math.round(pieData?.elektronik?.value),
-                            name: "PM ELEKTRONIK",
-                        },
-                        {
-                            value: Math.round(pieData?.tataudara?.value),
-                            name: "PM TATA UDARA",
-                        },
-                        {value: Math.round(pieData?.tataair?.value), name: "PM TATA AIR"},
-                    ],
+                    data: chartData,
                 },
             ],
         };
@@ -155,6 +144,6 @@ $(function () {
 
 
     setTimeout(() => {
-        window.location.replace(BASE_URL + "show/page1/"+unit);
+        // window.location.replace(BASE_URL + "show/page1/"+unit);
     }, 15000);
 });

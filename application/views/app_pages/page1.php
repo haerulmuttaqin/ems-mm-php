@@ -12,7 +12,7 @@
             <div class="card card-primary">
                 <div class="card-body">
                     <h4 class="text-bold text-center">TABEL PENGUKURAN DAYA LANTAI</h4>
-                    <table class="table table-responsive" style="height: 100%;">
+                    <table class="table" style="height: 100%;">
                         <thead class="thead-dark">
                         <tr>
                             <th scope="col" style="vertical-align: middle;">MEASUREMENT</th>

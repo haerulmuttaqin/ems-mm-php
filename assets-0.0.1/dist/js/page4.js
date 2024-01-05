@@ -30,7 +30,7 @@ $(function () {
                 source: thisMonth
             },
             grid: { containLabel: true },
-            xAxis: { name: 'amount' },
+            xAxis: { name: 'kW' },
             yAxis: { type: 'category' },
             series: [
                 {

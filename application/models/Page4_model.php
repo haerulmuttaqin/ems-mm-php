@@ -5,14 +5,23 @@ class Page4_model extends CI_Model
 {
     public function getChartData($unit)
     {
+        // mm - (LVMDP C1, LVMDP C2, LVMDP 28)
+        // a1 - (PHBUTR)
+        // a2 - (Panel Utama - LVMDB)
+
+        $table_config_name = 'dash_config_' . $unit;
+        $dash_config = $this->db->get_where($table_config_name, array('page_num' => 4, 'card_num' => 1))->row_array();
+        $key = $dash_config['key'];
+
         $table_name = 'meter_record_' . $unit;
         return $this->db->query("
-        select date_format(summary.date_time, '%d') date_time, avg(summary.value) as value from (
-            SELECT device_id, device, date_time, sum(kw_eqv) as value from $table_name
-                where device in ('LVMDP C1', 'LVMDP C2', 'LVMDP 28')
-                group by CAST(date_time AS DATE), device
-            ) as summary
-            where cast(date_time as DATE) BETWEEN (DATE_ADD(LAST_DAY(DATE_ADD(NOW(), INTERVAL -1 MONTH)), INTERVAL 1 DAY)) and NOW() - INTERVAL 1 DAY
+            select date_format(summary.date_time, '%d') as date_time, round(sum(value), 1) as value
+                from (
+                    select date_time, device, avg(kw_eqv) as value from $table_name
+                    where device like '%$key%'
+                    and cast(date_time as DATE) BETWEEN (DATE_ADD(LAST_DAY(DATE_ADD(NOW(), INTERVAL -1 MONTH)), INTERVAL 1 DAY)) and NOW() - INTERVAL 0 DAY
+                    group by cast(date_time as DATE), device 
+                ) as summary    
             group by cast(summary.date_time as DATE)
         ")->result_array();
     }
@@ -22,20 +31,10 @@ class Page4_model extends CI_Model
     {
         $table_name = 'meter_record_' . $unit;
         $data = array();
-        $type = array(
-            "SDP - SB",
-            "SDP - B1",
-            "SDP - B2",
-            "SDP - LT1",
-            "SDP - LT8",
-            "SDP - LT15",
-            "SDP - LT22",
-            "SDP - CBB NEW",
-            "SDP - GALLERY",
-            "SDP FIRE FIGHTING"
-        );
-        for ($i = 0; $i < sizeof($type) ; $i++) {
-            $item_floor = $type[$i];
+        $table_config_name = 'dash_config_' . $unit;
+        $dash_config = $this->db->get_where($table_config_name, array('page_num' => 4, 'card_num' => 2))->result_array();
+        for ($i = 0; $i < sizeof($dash_config) ; $i++) {
+            $item_floor = $dash_config[$i]['key'];
             $data[] = $this->db->query("
                 select '$item_floor' as caption, cast(date_time as DATE) as date_time, avg(kw_eqv) as value from $table_name 
                 where cast(date_time as DATE) = curdate() and device like '$item_floor'
@@ -49,14 +48,11 @@ class Page4_model extends CI_Model
     public function getPieDayaLift($unit)
     {
         $table_name = 'meter_record_' . $unit;
+        $table_config_name = 'dash_config_' . $unit;
+        $dash_config = $this->db->get_where($table_config_name, array('page_num' => 4, 'card_num' => 3))->result_array();
         $data = array();
-        $type = array(
-            array("caption" => "LIFT A (LIFT - LT15)", "key" => "LIFT - LT15"),
-            array("caption" => "LIFT B (LIFT - LT28)", "key" => "LIFT - LT28"),
-            array("caption" => "LIFT C (LIFT - LT4)", "key" => "LIFT - LT4"),
-        );
-        for ($i = 0; $i < sizeof($type) ; $i++) {
-            $item_floor = $type[$i];
+        for ($i = 0; $i < sizeof($dash_config); $i++) {
+            $item_floor = $dash_config[$i];
             $key = $item_floor['key'];
             $caption = $item_floor['caption'];
             $data[] = $this->db->query("
@@ -71,45 +67,11 @@ class Page4_model extends CI_Model
     public function getPieDayaLighting($unit)
     {
         $table_name = 'meter_record_' . $unit;
+        $table_config_name = 'dash_config_' . $unit;
+        $dash_config = $this->db->get_where($table_config_name, array('page_num' => 4, 'card_num' => 4))->result_array();
         $data = array();
-
-        $type = array(
-            array("caption" => "Penerangan & Stop Kontak - PLT - B2", "key" => "Penerangan Dan Stop Kontak - PLT - B2"),
-            array("caption" => "Penerangan & Stop Kontak - PLT - LT1", "key" => "Penerangan Dan Stop Kontak - PLT - LT1"),
-            array("caption" => "Penerangan & Stop Kontak - PLT - LT10", "key" => "Penerangan Dan Stop Kontak - PLT - LT10"),
-            array("caption" => "Penerangan & Stop Kontak - PLT - LT11", "key" => "Penerangan Dan Stop Kontak - PLT - LT11"),
-            array("caption" => "Penerangan & Stop Kontak - PLT - LT12", "key" => "Penerangan Dan Stop Kontak - PLT - LT12"),
-            array("caption" => "Penerangan & Stop Kontak - PLT - LT13", "key" => "Penerangan Dan Stop Kontak - PLT - LT13"),
-            array("caption" => "Penerangan & Stop Kontak - PLT - LT15", "key" => "Penerangan Dan Stop Kontak - PLT - LT15"),
-            array("caption" => "Penerangan & Stop Kontak - PLT - LT16", "key" => "Penerangan Dan Stop Kontak - PLT - LT16"),
-            array("caption" => "Penerangan & Stop Kontak - PLT - LT17", "key" => "Penerangan Dan Stop Kontak - PLT - LT17"),
-            array("caption" => "Penerangan & Stop Kontak - PLT - LT18", "key" => "Penerangan Dan Stop Kontak - PLT - LT18"),
-            array("caption" => "Penerangan & Stop Kontak - PLT - LT19", "key" => "Penerangan Dan Stop Kontak - PLT - LT19"),
-            array("caption" => "Penerangan & Stop Kontak - PLT - LT2", "key" => "Penerangan Dan Stop Kontak - PLT - LT2"),
-            array("caption" => "Penerangan & Stop Kontak - PLT - LT20", "key" => "Penerangan Dan Stop Kontak - PLT - LT20"),
-            array("caption" => "Penerangan & Stop Kontak - PLT - LT21", "key" => "Penerangan Dan Stop Kontak - PLT - LT21"),
-            array("caption" => "Penerangan & Stop Kontak - PLT - LT22", "key" => "Penerangan Dan Stop Kontak - PLT - LT22"),
-            array("caption" => "Penerangan & Stop Kontak - PLT - LT23", "key" => "Penerangan Dan Stop Kontak - PLT - LT23"),
-            array("caption" => "Penerangan & Stop Kontak - PLT - LT24", "key" => "Penerangan Dan Stop Kontak - PLT - LT24"),
-            array("caption" => "Penerangan & Stop Kontak - PLT - LT25", "key" => "Penerangan Dan Stop Kontak - PLT - LT25"),
-            array("caption" => "Penerangan & Stop Kontak - PLT - LT26", "key" => "Penerangan Dan Stop Kontak - PLT - LT26"),
-            array("caption" => "Penerangan & Stop Kontak - PLT - LT27", "key" => "Penerangan Dan Stop Kontak - PLT - LT27"),
-            array("caption" => "Penerangan & Stop Kontak - PLT - LT3", "key" => "Penerangan Dan Stop Kontak - PLT - LT3"),
-            array("caption" => "Penerangan & Stop Kontak - PLT - LT4", "key" => "Penerangan Dan Stop Kontak - PLT - LT4"),
-            array("caption" => "Penerangan & Stop Kontak - PLT - LT5", "key" => "Penerangan Dan Stop Kontak - PLT - LT5"),
-            array("caption" => "Penerangan & Stop Kontak - PL POD - LT4", "key" => "Penerangan Dan Stop Kontak - PL POD - LT4"),
-            array("caption" => "Penerangan & Stop Kontak - PL POD -LT3", "key" => "Penerangan Dan Stop Kontak - PL POD -LT3"),
-            array("caption" => "Penerangan & Stop Kontak - PL POD  - LT2", "key" => "Penerangan Dan Stop Kontak - PL POD  - LT2"),
-            array("caption" => "Penerangan & Stop Kontak - PL POD - LT1", "key" => "Penerangan Dan Stop Kontak - PL POD - LT1"),
-            array("caption" => "Penerangan & Stop Kontak - PLT - LT6", "key" => "Penerangan Dan Stop Kontak - PLT - LT6"),
-            array("caption" => "Penerangan & Stop Kontak - PLT - LT7", "key" => "Penerangan Dan Stop Kontak - PLT - LT7"),
-            array("caption" => "Penerangan & Stop Kontak - PLT - LT8", "key" => "Penerangan Dan Stop Kontak - PLT - LT8"),
-            array("caption" => "Penerangan & Stop Kontak - PLT - LT9", "key" => "Penerangan Dan Stop Kontak - PLT - LT9"),
-            array("caption" => "Penerangan & Stop Kontak - PLT - SB", "key" => "Penerangan Dan Stop Kontak - PLT - SB"),
-            array("caption" => "Penerangan & Stop Kontak - PLT B1", "key" => "Penerangan Dan Stop Kontak - PLT B1",),
-        );
-        for ($i = 0; $i < sizeof($type) ; $i++) {
-            $item_floor = $type[$i];
+        for ($i = 0; $i < sizeof($dash_config) ; $i++) {
+            $item_floor = $dash_config[$i];
             $key = $item_floor['key'];
             $caption = $item_floor['caption'];
             $data[] = $this->db->query("

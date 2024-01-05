@@ -232,6 +232,6 @@ $(function () {
 
 
     setTimeout(() => {
-        window.location.replace(BASE_URL + "show/page3/"+unit);
+        // window.location.replace(BASE_URL + "show/page3/"+unit);
     }, 15000);
 });

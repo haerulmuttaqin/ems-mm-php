@@ -33,6 +33,15 @@ Developed by Haerul Muttaqin - Nov 2020
     <link rel="stylesheet" href="<?= base_url('assets-' . app_version() . '/') ?>plugins/view-bigimg/view-bigimg.css">
     <link rel="shortcut icon" href="<?= base_url('assets-' . app_version() . '/') ?>dist/img/favicon.png" />
 
+    <style>
+        .container-ems {
+            padding: 22px;
+            height: 100%;
+            background-image: url('<?= base_url("assets-" . app_version() . "/dist/img/bg_" . ($unit) . ".png") ?>');
+            background-size: cover;
+        }
+    </style>
+
 </head>
 <input type="hidden" id="unit" value="<?= $unit ?>">
 <input type="hidden" id="user_data" value="<?= json_encode($user_data) ?>">

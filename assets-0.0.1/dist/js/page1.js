@@ -8,12 +8,12 @@ $(function () {
     const chartDom = document.getElementById("main");
     const myChart = echarts.init(chartDom);
     let option;
-    $.get(BASE_URL + 'show/page1/pie_data/' + unit, function (result) {
+    $.get(BASE_URL + 'show/page7/pie_data/' + unit, function (result) {
 
         const data = JSON.parse(result)
         const chartData = []
         data.forEach((item) => {
-            chartData.push({value: Math.round(item?.value) || 0, name: item?.caption || ""})
+            chartData.push({value: Number(item?.value).toFixed(1) || 0, name: item?.caption || ""})
         })
         option = {
             tooltip: {
