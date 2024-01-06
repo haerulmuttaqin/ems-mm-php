@@ -34,7 +34,7 @@
                             <tr>
                                 <th><?= $item['caption'] ?></th>
                                 <?php foreach ($data['header'] as $item_header) : ?>
-                                    <td><?= $item[str_replace(" ", "_", $item_header['key'])] ?: "-" ?></td>
+                                    <td><?= $item[str_replace(" ", "_", str_replace("-", "_",$item_header['key']))] ?: "-" ?></td>
                                 <?php endforeach; ?>
                             </tr>
                         <?php endforeach; ?>

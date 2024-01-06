@@ -4,16 +4,18 @@ $(function () {
     "use strict";
 
     const unit = $('#unit').val()
+    const dash = JSON.parse($('#dash').val())
+    const timeInterval = dash.find((ref) => ref.ref_name === "TIME_INTERVAL")['ref_value'];
 
     const chartDom = document.getElementById("main");
     const myChart = echarts.init(chartDom);
     let option;
-    $.get(BASE_URL + 'show/page7/pie_data/' + unit, function (result) {
+    $.get(BASE_URL + 'show/page1/pie_data/' + unit, function (result) {
 
         const data = JSON.parse(result)
         const chartData = []
         data.forEach((item) => {
-            chartData.push({value: Number(item?.value).toFixed(1) || 0, name: item?.caption || ""})
+            chartData.push({value: Number(item?.value || 0).toFixed(1) || 0, name: item?.caption || ""})
         })
         option = {
             tooltip: {
@@ -74,6 +76,6 @@ $(function () {
 
 
     setTimeout(() => {
-        window.location.replace(BASE_URL + "show/page2/"+unit);
-    }, 15000);
+        window.location.replace(BASE_URL + "show/page2/" + unit);
+    }, timeInterval);
 });

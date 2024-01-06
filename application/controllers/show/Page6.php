@@ -22,6 +22,7 @@ class Page6 extends CI_Controller
         }
         $data['title'] = 'Page 6';
         $data['unit'] = $unit;
+        $data['dash'] = $this->master->getGenericByCategoryName('DASHBOARD CONFIG');
         $data['user_data'] = $this->user->getUserById($this->session->userdata('user_sid'));
         $this->load->view('_partials/header_app', $data);
         $this->load->view('app_pages/page6', $data);

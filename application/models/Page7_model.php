@@ -74,7 +74,7 @@ class Page7_model extends CI_Model
                     SELECT
                     date_time,
                     'Current Avg (I)' as caption,
-                    SUM(subquery.a_avg) as ".str_replace(" ", "_", $key)."
+                    COALESCE(SUM(subquery.a_avg), 0) as ".str_replace(" ", "_", $key)."
                     FROM (
                     SELECT date_time, a_avg
                     FROM $table_name
@@ -112,7 +112,7 @@ class Page7_model extends CI_Model
                     SELECT
                     date_time,
                     'Active Power EQV (kW)' as caption,
-                    SUM(subquery.kw_eqv) as ".str_replace(" ", "_", $key)."
+                    COALESCE(SUM(subquery.kw_eqv), 0) as ".str_replace(" ", "_", $key)."
                     FROM (
                     SELECT date_time, kw_eqv
                     FROM $table_name
@@ -151,7 +151,7 @@ class Page7_model extends CI_Model
                 (select
                   ifnull(t.date_time, '') as date_time,
                   ifnull(t.caption, 'Power Factor') as caption,
-                  ifnull(t.".str_replace(" ", "_", $key).", null) as ".str_replace(" ", "_", $key)."
+                  ifnull(t.".str_replace(" ", "_", $key).", 0) as ".str_replace(" ", "_", $key)."
                 from (select '' as date_time, 'Power Factor' caption, 0 as ".str_replace(" ", "_", $key).") a
                        left join (SELECT date_time, 'Power Factor' as caption, pf_avg as ".str_replace(" ", "_", $key)."
                                   FROM $table_name

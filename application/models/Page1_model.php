@@ -19,7 +19,7 @@ class Page1_model extends CI_Model
                             mea as measurement, 
                             '$key' as type, 
                             ' $caption ' as caption,
-                            avg(kw_eqv) as value 
+                            COALESCE(AVG(kw_eqv), 0) as value
                         FROM $table_name
                         WHERE 
                         device LIKE '%$key%'
@@ -52,7 +52,7 @@ class Page1_model extends CI_Model
                     SELECT
                     date_time,
                     'Current Avg (I)' as caption,
-                    SUM(subquery.a_avg) as ".str_replace(" ", "_", $key)."
+                    COALESCE(SUM(subquery.a_avg), 0) as ".str_replace(" ", "_", $key)."
                     FROM (
                     SELECT date_time, a_avg
                     FROM $table_name
@@ -66,6 +66,7 @@ class Page1_model extends CI_Model
             }
             $num++;
         }
+
         // data1 Current Avg (I)
         $query_data1 =
             "
@@ -91,11 +92,11 @@ class Page1_model extends CI_Model
                 (select
                   ifnull(t.date_time, '') as date_time,
                   ifnull(t.caption, 'Frequency (Hz)') as caption,
-                  ifnull(t.".str_replace(" ", "_", $key).", null) as ".str_replace(" ", "_", $key)."
+                  ifnull(t.".str_replace(" ", "_", $key).", 0) as ".str_replace(" ", "_", $key)."
                 from (select '' as date_time, 'Frequency (Hz)' caption, 0 as ".str_replace(" ", "_", $key).") a
                        left join (SELECT date_time, 'Frequency (Hz)' as caption, hz_avg as ".str_replace(" ", "_", $key)."
                                   FROM $table_name
-                                  WHERE device LIKE '%$key%'
+                                  WHERE device LIKE '$key%'
                                   order by date_time desc
                                   limit 1) as t on a.caption=t.caption) as sub_".str_replace(" ", "_", $key)."";
             if ($num < (sizeof($dash_config) - 1)) {
@@ -129,11 +130,11 @@ class Page1_model extends CI_Model
                 (select
                   ifnull(t.date_time, '') as date_time,
                   ifnull(t.caption, 'Power Factor') as caption,
-                  ifnull(t.".str_replace(" ", "_", $key).", null) as ".str_replace(" ", "_", $key)."
+                  ifnull(t.".str_replace(" ", "_", $key).", 0) as ".str_replace(" ", "_", $key)."
                 from (select '' as date_time, 'Power Factor' caption, 0 as ".str_replace(" ", "_", $key).") a
                        left join (SELECT date_time, 'Power Factor' as caption, pf_avg as ".str_replace(" ", "_", $key)."
                                   FROM $table_name
-                                  WHERE device LIKE '%$key%'
+                                  WHERE device LIKE '$key%'
                                   order by date_time desc
                                   limit 1) as t on a.caption=t.caption) as sub_".str_replace(" ", "_", $key)."";
             if ($num < (sizeof($dash_config) - 1)) {
@@ -168,7 +169,7 @@ class Page1_model extends CI_Model
                 (select
                   ifnull(t.date_time, '') as date_time,
                   ifnull(t.caption, 'Voltage Phase to Phase (V)') as caption,
-                  ifnull(t.".str_replace(" ", "_", $key).", null) as ".str_replace(" ", "_", $key)."
+                  ifnull(t.".str_replace(" ", "_", $key).", 0) as ".str_replace(" ", "_", $key)."
                 from (select '' as date_time, 'Voltage Phase to Phase (V)' caption, 0 as ".str_replace(" ", "_", $key).") a
                        left join (SELECT date_time, 'Voltage Phase to Phase (V)' as caption, vll_avg as ".str_replace(" ", "_", $key)."
                                   FROM $table_name
@@ -207,11 +208,11 @@ class Page1_model extends CI_Model
                 (select
                   ifnull(t.date_time, '') as date_time,
                   ifnull(t.caption, 'THDI (%)') as caption,
-                  ifnull(t.".str_replace(" ", "_", $key).", null) as ".str_replace(" ", "_", $key)."
+                  ifnull(t.".str_replace(" ", "_", $key).", 0) as ".str_replace(" ", "_", $key)."
                 from (select '' as date_time, 'THDI (%)' caption, 0 as ".str_replace(" ", "_", $key).") a
                        left join (SELECT date_time, 'THDI (%)' as caption, thd_avg as ".str_replace(" ", "_", $key)."
                                   FROM $table_name
-                                  WHERE device LIKE '%$key%'
+                                  WHERE device LIKE '$key%'
                                   order by date_time desc
                                   limit 1) as t on a.caption=t.caption) as sub_".str_replace(" ", "_", $key)."";
             if ($num < (sizeof($dash_config) - 1)) {
@@ -246,7 +247,7 @@ class Page1_model extends CI_Model
                     SELECT
                     date_time,
                     'Active Power EQV (kW)' as caption,
-                    SUM(subquery.kw_eqv) as ".str_replace(" ", "_", $key)."
+                    COALESCE(SUM(subquery.kw_eqv), 0) as ".str_replace(" ", "_", $key)."
                     FROM (
                     SELECT date_time, kw_eqv
                     FROM $table_name
@@ -285,7 +286,7 @@ class Page1_model extends CI_Model
                     SELECT
                     date_time,
                     'Reactive Power EQV (kVAR)' as caption,
-                    SUM(subquery.kvar_eqv) as ".str_replace(" ", "_", $key)."
+                    COALESCE(SUM(subquery.kvar_eqv), 0) as ".str_replace(" ", "_", $key)."
                     FROM (
                     SELECT date_time, kvar_eqv
                     FROM $table_name
@@ -324,7 +325,7 @@ class Page1_model extends CI_Model
                     SELECT
                     date_time,
                     'Apparent Power EQV (kVA)' as caption,
-                    SUM(subquery.kva_eqv) as ".str_replace(" ", "_", $key)."
+                    COALESCE(SUM(subquery.kva_eqv), 0) as ".str_replace(" ", "_", $key)."
                     FROM (
                     SELECT date_time, kva_eqv
                     FROM $table_name
@@ -363,11 +364,3 @@ class Page1_model extends CI_Model
         return $data;
     }
 }
-
-//(SELECT
-//kw_eqv as value_air
-//FROM meter_record
-//WHERE
-//device LIKE '%Tata Air%'
-//order by date_time desc
-//LIMIT 1) as value5

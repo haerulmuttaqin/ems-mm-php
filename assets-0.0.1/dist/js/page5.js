@@ -4,7 +4,8 @@ $(function () {
     "use strict";
 
     const unit = $('#unit').val()
-
+    const dash = JSON.parse($('#dash').val())
+    const timeInterval = dash.find((ref) => ref.ref_name === "TIME_INTERVAL")['ref_value'];
 
     const chartDom1 = document.getElementById("chart1");
     const chartDom2 = document.getElementById("chart2");
@@ -237,5 +238,5 @@ $(function () {
 
     setTimeout(() => {
         window.location.replace(BASE_URL + "show/page6/"+unit);
-    }, 15000);
+    }, timeInterval);
 });

@@ -22,8 +22,8 @@ class Page3 extends CI_Controller
         }
         $data['title'] = 'Page 3';
         $data['unit'] = $unit;
+        $data['dash'] = $this->master->getGenericByCategoryName('DASHBOARD CONFIG');
         $data['user_data'] = $this->user->getUserById($this->session->userdata('user_sid'));
-        //$data['data'] = $this->page->getTableData($unit);
         $this->load->view('_partials/header_app', $data);
         $this->load->view('app_pages/page3', $data);
         $this->load->view('_partials/footer_app');

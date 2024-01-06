@@ -45,4 +45,5 @@ Developed by Haerul Muttaqin - Nov 2020
 </head>
 <input type="hidden" id="unit" value="<?= $unit ?>">
 <input type="hidden" id="user_data" value="<?= json_encode($user_data) ?>">
+<input type="hidden" id="dash" value='<?=json_encode($dash);?>'>
 <body style="height: 100%; overflow: hidden;">

@@ -35,8 +35,9 @@ class Page4_model extends CI_Model
         $dash_config = $this->db->get_where($table_config_name, array('page_num' => 4, 'card_num' => 2))->result_array();
         for ($i = 0; $i < sizeof($dash_config) ; $i++) {
             $item_floor = $dash_config[$i]['key'];
+            $caption = $dash_config[$i]['caption'];
             $data[] = $this->db->query("
-                select '$item_floor' as caption, cast(date_time as DATE) as date_time, avg(kw_eqv) as value from $table_name 
+                select '$caption' as caption, cast(date_time as DATE) as date_time, avg(kw_eqv) as value from $table_name 
                 where cast(date_time as DATE) = curdate() and device like '$item_floor'
             ")->row_array();
         }
